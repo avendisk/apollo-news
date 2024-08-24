@@ -1,0 +1,27 @@
+
+{{ define "main" }}
+{{ $liststyle := resources.Get "css/list.css"| resources.Minify }}
+<link rel="stylesheet" href="{{ $liststyle.Permalink }}">
+  <h1>My posts not loading</h1>
+  <div class="list-columns">
+  {{ range .Pages }}
+
+    <div class="post-snippet">
+      {{ with .Resources.GetMatch  "{imgs/feature.*,*.jpg,*.png,*.jpeg}" }}
+        <img class="list-feature" src="{{ .Permalink }}"/>      
+      {{ end }}
+
+
+
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+       <p class="list-date">{{ .Date.Format "January 2, 2006" }}</p>
+      {{ .Summary }}
+    </div>
+
+
+  {{ end }}
+
+{{ template "_internal/pagination.html" . }}
+{{ .Paginator.PageNumber }}
+</div>
+{{ end }}

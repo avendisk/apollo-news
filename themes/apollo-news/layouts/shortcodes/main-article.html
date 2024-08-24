@@ -1,0 +1,26 @@
+<div id="main-article" style="background-color:rgb(233, 144, 207)">{{.Inner | markdownify }}</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    console.log(text);
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    console.log(text);
+
+    const textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
+    console.log(textChunks);
+
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    var mainArticleContinued = textChunks[1].replace(/{NEW_LINE}/g,"\n");
+
+    var contNode = document.createTextNode(mainArticleContinued);
+    document.getElementById("main-article-cont").appendChild(contNode);
+    var continueNode = document.createElement("EM");
+    var contText = document.createTextNode(" continued on the next page...");
+    continueNode.appendChild(contText);
+    mainArticle.append(continueNode);
+
+
+});
+
+</script>

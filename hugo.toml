@@ -1,0 +1,11 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Apollo News'
+theme = 'apollo-news'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser.attribute]
+        block = true
+[markup.goldmark.renderer] 
+  unsafe = true

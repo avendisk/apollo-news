@@ -1,0 +1,146 @@
+:root {
+  --col-num: 6;
+}
+blockquote{
+    background-color: aquamarine;
+}
+
+h2{
+  background-color: rgb(177, 177, 177);
+  margin-bottom: 0;
+}
+img{
+    width: 100%;
+}
+/* Mark down columns adapted from 
+http://oostens.me/posts/hugo-column-shortcode/ */
+.md-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  
+    >div {
+      flex: 1 1;
+      margin: 1rem 0;
+      min-width: 100px;
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  
+    .markdown-inner {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+}
+
+/* // {{< columns >}} */
+.gdoc-columns {
+  margin:6 0;
+
+  &--regular > :first-child {
+    flex: 1;
+  }
+
+  &--small > :first-child {
+    flex: 0.35;
+    min-width: 600 * 0.35;
+  }
+
+  &--large > :first-child {
+    flex: 1.65;
+    min-width: 600 * 1.65;
+  }
+
+  &__content {
+    flex: 1 1;
+    min-width: 600 * 0.66;
+    padding: 0;
+  }
+
+  .gdoc-post__anchor {
+    display: none;
+  }
+}
+
+.columns{
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-between;
+}
+.col{
+    
+}
+.matt-columns2{
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-between;
+}
+.matt-col2{
+    
+}
+
+#content{
+  display: grid;
+  grid-template-columns: repeat(var(--col-num), 1fr);
+  gap:10px;
+  font-size:1.2em;
+}
+/* width: round(var(--width), 50px);
+width: round(up, 101px, var(--interval));
+width: round(down, var(--height), var(--interval));
+margin: round(to-zero, -105px, 10px); */
+
+#main-article
+{
+  grid-column: 1 / 5;
+  /* calc(3 * var(--col-num)/ 4)  ; */
+}
+.feature-img{
+  grid-column: 5 / calc(var( --col-num ) + 1);
+}
+
+.quarter-article{
+  background-color:rgb(127, 127, 236);
+  /* column-span: 6;calc(all/2); */
+  grid-column: span calc(var( --col-num ) / 2);
+}
+.difficult-words{
+  background-color:rgb(146, 231, 147);
+  grid-column:span var(--col-num);
+}
+.difficult-words ul
+{
+  padding:10px;
+  margin:0;
+  list-style-type: none;
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: 23fr 23fr 8fr 23fr 23fr;
+  grid-auto-flow: dense
+}
+.difficult-words li p
+{
+  padding:0;
+  margin:0;
+}
+.difficult-words li:nth-child(odd)
+{
+  grid-column: 1;
+  background-color:rgb(216, 176, 47);
+}
+.difficult-words li:nth-child(n+11):nth-child(odd)
+{
+  grid-column: 4;
+  background-color:rgb(216, 176, 47);
+}
+.difficult-words li:nth-child(even){
+  grid-column: 2;
+  background-color:rgb(84, 75, 44);
+}
+.difficult-words li:nth-child(n+11):nth-child(even){
+  grid-column: 5;
+  background-color:rgb(84, 75, 44);
+}
+
+
