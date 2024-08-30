@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Test Bundle | Apollo News</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
 
 
-      <script src="/js/main.js"></script>
+      <script src="../../js/main.js"></script>
 
 
 </head>
@@ -19,13 +19,13 @@
   <nav>
     <ul>
     <li>
-      <a href="/">Home</a>
+      <a href="../../">Home</a>
     </li>
     <li>
-      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+      <a href="../../posts">News</a>
     </li>
     <li>
-      <a href="/tags/">Tags</a>
+      <a href="../../tags">Tags</a>
     </li>
     </ul>
   </nav>
@@ -42,11 +42,66 @@
 
 
   <time datetime="2024-08-23T00:48:42-04:00">August 23, 2024</time>
+
+<div class="translations">
+
+
+
+  
+  <a class=' selected ' href='../../posts/test-bundle/'> English </a>
+  
+
+
+    
+</div>
+
 <div id="content">
   <p>Here&rsquo;s the content section of this example file
-<div id="main-article" style="background-color:rgb(233, 144, 207)">here is content inside the main article shrtocode</div>
+<div id="main-article" lang="" class="article">
+here is content inside the main article shrtocode
+</div>
 <script>
+window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    if ( document.getElementById("main-article").lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,250}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
+    }
+   
+    
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
+    var contNode = document.createTextNode(mainArticleContinued);
+    document.getElementById("main-article-cont").appendChild(contNode);
+    var continueNode = document.createElement("EM");
+    var contText = document.createTextNode(continueText);
+    continueNode.appendChild(contText);
+    mainArticle.append(continueNode);
 
+
+});
 
 </script></p>
 

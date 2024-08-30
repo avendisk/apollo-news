@@ -1,22 +1,41 @@
-<div id="main-article" style="background-color:rgb(233, 144, 207)">{{.Inner | markdownify }}</div>
+<div id="main-article" lang="{{ .Get 0 }}" class="article">{{ .Inner }}</div>
 <script>
 window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    if ( document.getElementById("main-article").lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
     var mainArticle = document.getElementById("main-article");
     var text = mainArticle.innerHTML;
-    console.log(text);
     text = text.replace(/\n/g,"{NEW_LINE}");
-    console.log(text);
-
-    const textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
-    console.log(textChunks);
-
+    // console.log(text);
+    var textChunks = "";
+    if(isJapanese)
+    {
+        // textChunks = text.match(/\S.{1,200}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,250}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
+    }
+   
+    // console.log(textChunks);
     mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
-    var mainArticleContinued = textChunks[1].replace(/{NEW_LINE}/g,"\n");
-
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
     var contNode = document.createTextNode(mainArticleContinued);
     document.getElementById("main-article-cont").appendChild(contNode);
     var continueNode = document.createElement("EM");
-    var contText = document.createTextNode(" continued on the next page...");
+    var contText = document.createTextNode(continueText);
     continueNode.appendChild(contText);
     mainArticle.append(continueNode);
 

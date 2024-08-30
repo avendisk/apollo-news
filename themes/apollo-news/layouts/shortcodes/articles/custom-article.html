@@ -1,0 +1,8 @@
+<div class="quarter-article article">    
+    {{ $input := .Get 0 }}
+    {{ if eq "markdownify" $input }}
+        {{ .Inner | markdownify }}
+    {{ else }}
+        {{ .Inner }}
+    {{ end }}
+</div>

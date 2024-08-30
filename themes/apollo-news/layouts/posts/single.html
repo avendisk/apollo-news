@@ -7,6 +7,23 @@
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format ":date_long" }}
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+<div class="translations">
+{{ $len := (len $.AllTranslations) }}
+{{ $i := 0 }}
+{{ range $.AllTranslations }}
+  {{ $i = (add $i 1) }}
+  <a class='{{if eq .Lang $.Lang}} selected {{end}}' href='{{.RelPermalink}}'> {{ .Language.LanguageName }} </a>
+  {{ if (lt $i $len) }}
+    <span class="vertical-divider">|</span> 
+  {{ end }}
+{{ end }}
+
+    <!-- {{ .RelPermalink }}
+    <a href='{{ relref . "/posts/20190830_issue1" }}'>日本語</a>
+    |<a href='{{ relref . (dict "path" "/posts/20190830_issue1" "lang" "en") }}'>English</a>  -->
+</div>
+
 <div id="content">
   {{ .Content }}
 </div>

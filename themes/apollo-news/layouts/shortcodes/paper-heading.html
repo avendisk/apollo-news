@@ -1,0 +1,18 @@
+
+<div id="paper-heading">
+    <h1 id="paper-title">{{ .Site.Params.paper_title }}</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            {{ if .Page.Params.issue_num}}
+                Issue #{{ .Page.Params.issue_num}}
+            {{ end }}
+        </div>
+        <div id="paper-date">
+            {{ if .Page.Params.actual_date }}
+                {{ .Page.Params.actual_date | time.Format ":date_long" }}
+            {{ else }}
+                {{ .Page.Params.date | time.Format ":date_long" }}
+            {{ end }}
+        </div>
+    </div>
+</div>

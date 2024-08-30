@@ -1,21 +1,81 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-US'
+languageCode = 'en'
 title = 'My New Hugo Site'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+[Menu]
+  # Main Menu
+  [[menu.Main]]
+  identifier = 'home'
+  name = "Home"
+  url= "/"
+  weight = 10
+  [[menu.Main]]
+  identifier = 'posts'
+  name = "News"
+  url= "/posts"
+  weight = 20
+  [[menu.Main]]
+  identifier = 'tags'
+  name = "Tags"
+  url= "/tags"
+  weight = 30
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+
+
+# [[languages.en.menu.main]]
+# name = "Home"
+# url = "/"
+# weight = 10
+
+# [[languages.en.menu.main]]
+# name = "Posts"
+# url = "/"
+# weight = 20
+
+# [[languages.en.menu.main]]
+# name = "Tags"
+# url = "/"
+# weight = 30
+
+# [[languages.ja.menu.main]]
+# name = "ホーム"
+# url = "/"
+# weight = 10
+
+# [[languages.ja.menu.main]]
+# name = "ポースト"
+# url = "/posts"
+# weight = 20
+
+# [[languages.ja.menu.main]]
+# name = "タッグ"
+# url = "/tags"
+# weight = 30
+
+# [[languages.en.menu.main]]
+# name = "about me"
+# url = "/about"
+
+# [[languages.es.menu.main]]
+# name = "sobre mí"
+# url = "/about"
+
+
+# [[menus.main]]
+# name = 'Home'
+# pageRef = '/posts'
+# weight = 10
+
+# [[menus.main]]
+# name = 'Posts'
+# pageRef = '/posts'
+# weight = 20
+
+# [[menus.main]]
+# name = 'Tags'
+# pageRef = '/tags'
+# weight = 30
 
 [module]
   [module.hugoVersion]

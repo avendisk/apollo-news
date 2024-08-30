@@ -1,11 +1,37 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://apollonews.com/'
 languageCode = 'en-us'
 title = 'Apollo News'
 theme = 'apollo-news'
+relativeURLs = true
+defaultContentLanguage = 'en'
+# defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = 'en'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Apollo News'
+    weight = 1
+  [languages.ja]
+    disabled = false
+    languageCode = 'ja'
+    languageDirection = 'ltr'
+    languageName = '日本語'
+    title = 'アポロニューズ'
+    weight = 2
+  
+
+
 
 [markup]
   [markup.goldmark]
-    [markup.goldmark.parser.attribute]
-        block = true
+    [markup.goldmark.parser]
+        attribute.block = true
+        wrapStandAloneImageWithinParagraph = false
 [markup.goldmark.renderer] 
   unsafe = true
+  
+[params]
+    paper_title = "Apollo News"

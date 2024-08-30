@@ -24,7 +24,23 @@ body {
   margin: 0 auto;
   font-family: Spectral, sans-serif;
 }
-
+main {
+  text-align: center;
+}
+table{
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  font-size:2rem;
+  border-spacing: 10px;
+}
+td,th{
+  /* padding-left:30px;
+  padding-right:30px; */
+}
+th{
+  font-size:3rem;
+}
 nav ul {
   list-style: none;
   padding: 3px 5px;

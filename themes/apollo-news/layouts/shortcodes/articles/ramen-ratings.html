@@ -1,0 +1,15 @@
+<div class="ramen-ratings">
+{{ $rating := .Get 0 }}
+{{ $fullramen := resources.Get "imgs/ramen-with-steam.png" }}
+{{ $emptyramen := resources.Get "imgs/empty-ramen.png" }}
+{{ $remaining := sub 5 $rating }}
+Rating: {{ $rating }} out of 5 bowls of ramen
+<br/>
+{{ range seq $rating }}
+    <img class="ramen-img" src="{{ $fullramen.Permalink }}">
+    
+{{ end }}
+{{ range seq $remaining }}
+    <img class="ramen-img" src="{{ $emptyramen.Permalink }}">
+{{ end }}
+</div>

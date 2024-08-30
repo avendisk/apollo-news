@@ -1,112 +1,208 @@
 :root {
   --col-num: 6;
 }
-blockquote{
-    background-color: aquamarine;
-}
-
-h2{
-  background-color: rgb(177, 177, 177);
-  margin-bottom: 0;
-}
-img{
-    width: 100%;
-}
-/* Mark down columns adapted from 
-http://oostens.me/posts/hugo-column-shortcode/ */
-.md-columns {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -1rem;
-    margin-right: -1rem;
-  
-    >div {
-      flex: 1 1;
-      margin: 1rem 0;
-      min-width: 100px;
-      max-width: 100%;
-      padding: 0 1rem;
-    }
-  
-    .markdown-inner {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-}
-
-/* // {{< columns >}} */
-.gdoc-columns {
-  margin:6 0;
-
-  &--regular > :first-child {
-    flex: 1;
-  }
-
-  &--small > :first-child {
-    flex: 0.35;
-    min-width: 600 * 0.35;
-  }
-
-  &--large > :first-child {
-    flex: 1.65;
-    min-width: 600 * 1.65;
-  }
-
-  &__content {
-    flex: 1 1;
-    min-width: 600 * 0.66;
-    padding: 0;
-  }
-
-  .gdoc-post__anchor {
-    display: none;
+@media screen and (min-width: 400px) {
+  body {
+    /* background-color: lightgreen; */
   }
 }
 
-.columns{
-    display: flex;
-    flex-wrap: none;
-    justify-content: space-between;
+@media screen and (min-width: 800px) {
+  body {
+    /* background-color: lavender; */
+  }
 }
-.col{
-    
+.article:lang(ja):not(h2){
+  font-size:1.2rem;
 }
-.matt-columns2{
-    display: flex;
-    flex-wrap: none;
-    justify-content: space-between;
+h2:lang(ja){
+  font-size:1.5rem;
 }
-.matt-col2{
-    
-}
-
-#content{
+.page{
+  border:2px solid black;
+  width: 21cm;
+  height: 29.7cm;
+  /* margin: 30mm 45mm 30mm 45mm; */
+  box-sizing: border-box;
+  padding:20px;
+  margin: 0 auto; 
   display: grid;
   grid-template-columns: repeat(var(--col-num), 1fr);
+  /* grid-template-columns: repeat(var(--col-num), minmax(1fr,calc(100% / (var(--col-num) + 1)))); */
+  grid-auto-rows: 10%;
+  grid-template-rows: minmax(0,5%) minmax(0,25%) minmax(0,48%) minmax(0,22%);
   gap:10px;
-  font-size:1.2em;
+  font-size:1.1rem;
+
+  /* change the margins as you want them to be. */
 }
+.page:nth-of-type(2) {
+  margin-top:5rem;
+  grid-template-rows: minmax(0,20%) minmax(0,30%) minmax(0,30%) minmax(0,22%);
+}
+.translations{
+  text-align: right;
+  margin-left: 50%;
+  margin-right: 20%;
+  font-family: Raleway, sans-serif;
+}
+.vertical-divider{
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* .page > div{
+  display:grid;
+  overflow: hidden;
+} */
+
 /* width: round(var(--width), 50px);
 width: round(up, 101px, var(--interval));
 width: round(down, var(--height), var(--interval));
 margin: round(to-zero, -105px, 10px); */
+/* Mark down there is some md info here:
+http://oostens.me/posts/hugo-column-shortcode/ */
 
-#main-article
+.author{
+  font-style: italic;
+  font-weight: bold;
+  font-size: .8rem;
+}
+p:empty {display:none;}
+blockquote{
+    /* background-color: aquamarine; */
+}
+h1{
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 0;
+  margin-left: 1dvh;
+  margin-top: .2rem;
+}
+h2, h3{
+  /* background-color: rgb(171, 118, 118); */
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top:0;
+}
+h2{
+  /* background-color: rgb(177, 177, 177); */
+  color: #676767;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+h3{
+  text-align: center;
+}
+
+
+/* HEAD OF THE PAPER SECTION */
+#paper-heading
+{
+  grid-column: span var(--col-num);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#date-and-issue{
+  float: right;
+  font-size:0.8rem;
+  margin-right: 1rem;
+  text-align: right;
+}
+/* END HEAD OF THE PAPER SECTION */
+
+
+/* ARTICLE SECTION */
+#main-article, #main-article-cont
 {
   grid-column: 1 / 5;
+  /* background-color:rgb(233, 144, 207); */
   /* calc(3 * var(--col-num)/ 4)  ; */
 }
-.feature-img{
-  grid-column: 5 / calc(var( --col-num ) + 1);
+#main-article-cont{
+  grid-column: 3 / calc(var( --col-num ) + 1);
+  margin-top:.5rem;
 }
-
+.article{
+  margin-top:1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: justify;
+}
 .quarter-article{
-  background-color:rgb(127, 127, 236);
+  /* background-color:rgb(127, 127, 236); */
   /* column-span: 6;calc(all/2); */
   grid-column: span calc(var( --col-num ) / 2);
 }
+/* END ARTICLE SECTION */
+
+/*SPECIAL ARTICLE SECTION*/
+.spoiler { 
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+  color: black; 
+  background-color: black;
+
+}
+.spoiler:hover {
+  cursor: pointer;
+  
+}
+
+.spoiler:active { 
+  background-color: inherit;
+  color: inherit;
+}
+
+
+/* IMG SECTION */
+.feature-img, .art-img, .feature-img-left{
+  border: 3px solid black;
+}
+.feature-img{
+  width: 90%;
+  height: 100%;
+  margin:auto;
+  object-fit: cover;
+  grid-column: 5 / calc(var( --col-num ) + 1);
+}
+.feature-img-left{
+  width: 90%;
+  height: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:.5rem;
+  object-fit: cover;
+  grid-column: 1 / 3;
+}
+.ramen-img{
+  width:15%;
+}
+.art-img{
+  display:block;
+  max-width:100%;
+  max-height:85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.puzzle-img{
+  display:block;
+  max-width:100%;
+  max-height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* END IMG SECTION */
+
+
+/*  DIFFICULT WORDS SECTION */
 .difficult-words{
-  background-color:rgb(146, 231, 147);
+  /* background-color:rgb(146, 231, 147); */
   grid-column:span var(--col-num);
 }
 .difficult-words ul
@@ -121,26 +217,27 @@ margin: round(to-zero, -105px, 10px); */
 }
 .difficult-words li p
 {
-  padding:0;
+  padding:0.1rem;
   margin:0;
+  border: 1px solid black;
 }
 .difficult-words li:nth-child(odd)
 {
   grid-column: 1;
-  background-color:rgb(216, 176, 47);
+  /* background-color:rgb(216, 176, 47); */
 }
 .difficult-words li:nth-child(n+11):nth-child(odd)
 {
   grid-column: 4;
-  background-color:rgb(216, 176, 47);
+  /* background-color:rgb(216, 176, 47); */
 }
 .difficult-words li:nth-child(even){
   grid-column: 2;
-  background-color:rgb(84, 75, 44);
+  /* background-color:rgb(84, 75, 44); */
 }
 .difficult-words li:nth-child(n+11):nth-child(even){
   grid-column: 5;
-  background-color:rgb(84, 75, 44);
+  /* background-color:rgb(84, 75, 44); */
 }
-
+/* END DIFFICULT WORDS SECTION */
 

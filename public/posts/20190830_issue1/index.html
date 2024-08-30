@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>20190830_issue1 | Apollo News</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
 
 
-      <script src="/js/main.js"></script>
+      <script src="../../js/main.js"></script>
 
 
 </head>
@@ -19,13 +19,13 @@
   <nav>
     <ul>
     <li>
-      <a href="/">Home</a>
+      <a href="../../">Home</a>
     </li>
     <li>
-      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+      <a href="../../posts">News</a>
     </li>
     <li>
-      <a href="/tags/">Tags</a>
+      <a href="../../tags">Tags</a>
     </li>
     </ul>
   </nav>
@@ -42,74 +42,253 @@
 
 
   <time datetime="2024-08-22T19:52:38-04:00">August 22, 2024</time>
+
+<div class="translations">
+
+
+
+  
+  <a class=' selected ' href='../../posts/20190830_issue1/'> English </a>
+  
+    <span class="vertical-divider">|</span> 
+  
+
+  
+  <a class='' href='../../ja/posts/20190830_issue1/'> 日本語 </a>
+  
+
+
+    
+</div>
+
 <div id="content">
-  <div id="main-article" style="background-color:rgb(233, 144, 207)"><h2 id="soma-nomaoi">Soma Nomaoi</h2>
-<p>Last month was Soma’s biggest festival: Soma Nomaoi. On Saturday the 27th, there were parades in Soma, Odaka, and Kashima. People from Soso area dressed up as soldiers and samurai. They marched and rode horses in the parades.   On Sunday, there were horse races and flag catching. Many people from all over Japan come to see the festival, the races are the most popular event. That night there were fireworks in Odaka.</p>
-<p>On Monday, in Odaka they have Nomakake (野馬懸) in which men try to catch wild horses and put a rope on it. It’s pretty dangerous because the men often get kicked by the horses.</p>
-<p>Many people from Soma have never seen the races or the horse-catching. I recommend everyone see them at least once, while they have the chance.</p>
+  <p><div class="page">
+
+<div id="paper-heading">
+    <h1 id="paper-title">Apollo News</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            
+                Issue #1
+            
+        </div>
+        <div id="paper-date">
+            
+                June 22, 2020
+            
+        </div>
+    </div>
+</div>
+<div id="main-article" lang="" class="article">
+<h2> Soma Nomaoi </h2>
+<div class="author">By Matt</div>
+Last month was Soma's biggest festival: Soma Nomaoi. On Saturday the 27th, there were parades in Soma, Odaka, and Kashima. People from Soso area dressed up as soldiers and samurai. They marched and rode horses in the parades.   On Sunday, there were horse races and flag catching. Many people from all over Japan come to see the festival, the races are the most popular event. That night there were fireworks in Odaka. 
+
+On Monday, in Odaka they have Nomakake (野馬懸) in which men try to catch wild horses and put a rope on it. It’s pretty dangerous because the men often get kicked by the horses. 
+
+Many people from Soma have never seen the races or the horse-catching. I recommend everyone see them at least once, while they have the chance.
 </div>
 <script>
 window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    if ( document.getElementById("main-article").lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
     var mainArticle = document.getElementById("main-article");
     var text = mainArticle.innerHTML;
-    console.log(text);
     text = text.replace(/\n/g,"{NEW_LINE}");
-    console.log(text);
-
-    const textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
-    console.log(textChunks);
-
+    
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,250}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
+    }
+   
+    
     mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
-    var mainArticleContinued = textChunks[1].replace(/{NEW_LINE}/g,"\n");
-
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
     var contNode = document.createTextNode(mainArticleContinued);
     document.getElementById("main-article-cont").appendChild(contNode);
     var continueNode = document.createElement("EM");
-    var contText = document.createTextNode(" continued on the next page...");
+    var contText = document.createTextNode(continueText);
     continueNode.appendChild(contText);
     mainArticle.append(continueNode);
 
 
 });
 
-</script>
-<p class="feature-img"><img src="imgs/feature.jpg" alt="Soma Nomaoi"></p>
-<!-- you can put percent signs on this instead of <> to process markdown -->
-<div class="quarter-article">
-    <h3 id="review-attack-on-titan-anime">Review: Attack on Titan (Anime)</h3>
-<p>By Matt
-The things you notice first when you watch Attack on Titan (進撃の巨人）) are a lot of blood, and a lot of grotesque titans. The titans are so strange that it is funny. After the first season the animation in this show is very high quality, more like a movie than a TV show. The story, well, the story is crazy. I watch this show in Japanese with no English subtitles. Most of the time I don’t understand the story. But the characters in the story also have no idea, so it’s ok. Like most anime, the story moves very slowly, which is my biggest complaint. In recent episodes, I would get bored and do other things while I was watching.</p>
+</script></p>
+<img alt="Soma Nomaoi Race" class="feature-img" src="../../posts/20190830_issue1/imgs/feature.jpg"><!-- you can put percent signs on this instead of <> to process markdown -->
+<div class="quarter-article article">
+
+
+    
+<h2>Review: Attack on Titan (Anime)</h2>
+<div class="author">By Matt</div>
+Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque titans. The titans very strange. After the first season, the animation in this show is very high quality, more like a movie than a TV show. The story, well, the story is crazy. I watch this show in Japanese with no English subtitles. Most of the time I don’t understand the story. But the characters in the story also have no idea, so it’s ok. Like most anime, the story moves very slowly, which is my biggest complaint. In recent episodes, I would get bored and do other things while I was watching.
+<div class="ramen-ratings">
+
+
+
+
+Rating: 3 out of 5 bowls of ramen
+<br/>
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+
 </div>
-<div class="quarter-article">
-    <h3 id="useful-phrase">Useful Phrase</h3>
+
+
+</div>
+<div class="quarter-article article">
+
+
+    <h2 id="useful-phrase">Useful Phrase</h2>
 <h3 id="whats-up">“What’s up?”</h3>
-<p>Meaning:「何している？」<br>
+<p><strong>Meaning:</strong>「何している？」<br>
 や「最近、何かあった？」<br>
 や「かわったことは？」<br>
 や「どうしたの？」など<br>
-When to use: When you greet someone
-Who to use with: Friends and family.
-How to respond: People usually say “Nothing.” or “Not much.”
-Example conversation:
-Peter: Hey Mary, what’s up?
-Mary: Nothing, what’s up with you?
-Peter: Not much, I’m doing some homework.</p>
-</div>
-<!-- <div class="word-table">
-    
-|English        |Japanese       |    |English     |Japanese     |
-|------------   |-------------  |----|------------|-------------|
-|greet          |挨拶する        |    |respond|返事する；答える|
-|useful      |便利な；有用な    |    | riddle  |謎々|
-|wild|荒っぽい；野生|         |bucks|ドル|
-|phrase|フレーズ|    |recommend|勧める|
-|pretty|かなり|     |to suck at ~|～が下手|
-|            |             |    |            |             | 
+<strong>When to use:</strong> When you greet someone.<br>
+<strong>Who to use with:</strong> Friends and family.<br>
+<strong>How to respond:</strong> People usually say “Nothing.” or “Not much.”</p>
+<p><strong>Example conversation:</strong><br>
+<strong>Peter:</strong> Hey Mary, what’s up?<br>
+<strong>Mary:</strong> Nothing, what’s up with you?<br>
+<strong>Peter:</strong> Not much, I’m doing some homework.</p>
 
-</div>-->
-<div class="difficult-words">
-    <h2 id="difficult-words">Difficult Words</h2>
-<ul>
+
+</div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <ul>
+<li>
+<p>dress up as ~</p>
+</li>
+<li>
+<p>～に仮想する</p>
+</li>
+<li>
+<p>march</p>
+</li>
+<li>
+<p>行進する</p>
+</li>
+<li>
+<p>strange</p>
+</li>
+<li>
+<p>変な</p>
+</li>
+<li>
+<p>quality</p>
+</li>
+<li>
+<p>質</p>
+</li>
+<li>
+<p>season</p>
+</li>
+<li>
+<p>期；シーズン</p>
+</li>
+<li>
+<p>subtitles</p>
+</li>
+<li>
+<p>字幕</p>
+</li>
+<li>
+<p>have no idea</p>
+</li>
+<li>
+<p>全くわからない</p>
+</li>
+<li>
+<p>complaint</p>
+</li>
+<li>
+<p>文句</p>
+</li>
+<li>
+<p>get bored</p>
+</li>
+<li>
+<p>退屈する</p>
+</li>
+<li>
+<p>share</p>
+</li>
+<li>
+<p>共有する</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="page">
+<img alt="Noumakake" class="feature-img-left" src="../../posts/20190830_issue1/imgs/noumakake.jpg"><div id="main-article-cont" class="article"></div>
+<div class="quarter-article article">
+
+
+    <h2 id="art-corner">Art Corner</h2>
+<div class="author">By Yoshiko</div>
+<img alt="Ms. Whiskers" class="art-img" src="imgs/mswhiskers.jpg">
+
+</div>
+<div class="quarter-article article">
+
+
+    <h2 id="art-corner">Art Corner</h2>
+<div class="author">By Matt</div>
+<img alt="Trump Buys Greenland" class="art-img" src="imgs/trump.png">
+
+</div>
+<div class="quarter-article article">
+
+
+    <h2 id="puzzle">Puzzle</h2>
+<img alt="Sudoku Puzzle" class="puzzle-img" src="imgs/sudoku.png">
+
+</div>
+<div class="quarter-article article">
+
+
+    <h2 id="riddle-1">Riddle #1</h2>
+<p>Four large people share one small umbrella but no one gets wet. Why?</p>
+<p>Answer:</p>
+<p><button class="spoiler">It&rsquo;s not raining</button></p>
+
+
+</div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <ul>
 <li>
 <p>greet</p>
 </li>
@@ -172,7 +351,7 @@ Peter: Not much, I’m doing some homework.</p>
 </li>
 </ul>
 </div>
-<div id="main-article-cont"></div>
+</div>
 
 </div>
   
