@@ -2,89 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/apollo-news/</loc>
     <lastmod>2024-08-29T17:28:33-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/"
+                href="http://localhost:1313/apollo-news/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/apollo-news/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/test-bundle/</loc>
+    <loc>http://localhost:1313/apollo-news/posts/test-bundle/</loc>
     <lastmod>2024-08-23T00:48:42-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/20190830_issue1/</loc>
+    <loc>http://localhost:1313/apollo-news/posts/20190830_issue1/</loc>
     <lastmod>2024-08-22T19:52:38-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/posts/20190830_issue1/"
+                href="http://localhost:1313/apollo-news/ja/posts/20190830_issue1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/20190830_issue1/"
+                href="http://localhost:1313/apollo-news/posts/20190830_issue1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/blue/</loc>
+    <loc>http://localhost:1313/apollo-news/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/green/</loc>
+    <loc>http://localhost:1313/apollo-news/tags/green/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-3/</loc>
+    <loc>http://localhost:1313/apollo-news/posts/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/red/</loc>
+    <loc>http://localhost:1313/apollo-news/tags/red/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/apollo-news/tags/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/tags/"
+                href="http://localhost:1313/apollo-news/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:1313/apollo-news/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/post-2/</loc>
+    <loc>http://localhost:1313/apollo-news/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-1/</loc>
+    <loc>http://localhost:1313/apollo-news/posts/post-1/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/apollo-news/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/posts/"
+                href="http://localhost:1313/apollo-news/ja/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="http://localhost:1313/apollo-news/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/apollo-news/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/"
+                href="http://localhost:1313/apollo-news/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="http://localhost:1313/apollo-news/categories/"
                 />
   </url>
 </urlset>
