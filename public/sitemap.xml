@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>http://localhost:1313/apollo-news/en/sitemap.xml</loc>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
     
       <lastmod>2024-08-29T17:28:33-04:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:1313/apollo-news/ja/sitemap.xml</loc>
+    <loc>http://localhost:1313/ja/sitemap.xml</loc>
     
       <lastmod>2024-08-26T09:41:42-04:00</lastmod>
     
