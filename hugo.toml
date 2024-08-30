@@ -2,7 +2,7 @@ baseURL = 'https://apollonews.com/'
 languageCode = 'en'
 title = 'Apollo News'
 theme = 'apollo-news'
-relativeURLs = true
+# relativeURLs = true
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubdir = true
 
