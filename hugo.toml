@@ -1,5 +1,5 @@
 baseURL = 'https://apollonews.com/'
-languageCode = 'en-us'
+languageCode = 'en'
 title = 'Apollo News'
 theme = 'apollo-news'
 relativeURLs = true
