@@ -7,7 +7,7 @@ featured_image_caption = "feature caption"
 
 [params]
     paper_title = "Apollo News"
-    actual_date = 1999-01-01
+    actual_date = {{ .Date }}
     issue_num = 1
 +++
 
