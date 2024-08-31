@@ -54,7 +54,7 @@ featured_image_caption = "feature caption"
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->
-
+## Difficult Words
 * greet
 * 挨拶する 
 

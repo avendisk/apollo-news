@@ -132,9 +132,9 @@ h3{
   padding-right: 0.5rem;
   text-align: justify;
 }
+
 .quarter-article{
   /* background-color:rgb(127, 127, 236); */
-  /* column-span: 6;calc(all/2); */
   grid-column: span calc(var( --col-num ) / 2);
 }
 /* END ARTICLE SECTION */
@@ -204,6 +204,7 @@ h3{
 .difficult-words{
   /* background-color:rgb(146, 231, 147); */
   grid-column:span var(--col-num);
+  font-size:1rem;
 }
 .difficult-words ul
 {

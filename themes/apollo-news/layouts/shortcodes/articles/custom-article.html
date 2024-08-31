@@ -1,8 +1,25 @@
-<div class="quarter-article article">    
-    {{ $input := .Get 0 }}
-    {{ if eq "markdownify" $input }}
-        {{ .Inner | markdownify }}
-    {{ else }}
-        {{ .Inner }}
-    {{ end }}
+
+<!-- set default num of rows to span to 1 if not set -->
+{{ $total_col := 6 }}
+{{ $rows := 1 }}
+{{ $col := 2 }}
+
+{{ $temp := "test" }}
+{{ with .Get 0}}
+    {{ $rows = . }} 
+{{ end }}
+{{ if eq $rows 0 }}
+    {{ $rows = 1 }} 
+{{ end }}
+
+{{ with .Get 1}}
+    {{ $col = . }} 
+{{ end }}
+{{ if eq $col 0 }}
+    {{ $col = 2 }} 
+{{ end }}
+
+{{ $col_span := div $total_col $col }}
+<div class="custom-article article" style="grid-row:span {{ $rows }};grid-column:span {{ $col_span }};">
+    {{.Inner}}  
 </div>

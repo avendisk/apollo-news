@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>20190830_issue1 | Apollo News</title>
+<title>Issue #1 | Apollo News</title>
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -37,7 +37,7 @@
 
 <link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
 
-<h1>20190830_issue1</h1>
+<h1>Issue #1</h1>
 
 
 
@@ -74,7 +74,7 @@
         </div>
         <div id="paper-date">
             
-                June 22, 2020
+                August 30, 2019
             
         </div>
     </div>
@@ -101,16 +101,15 @@ window.addEventListener('DOMContentLoaded', function() {
     var mainArticle = document.getElementById("main-article");
     var text = mainArticle.innerHTML;
     text = text.replace(/\n/g,"{NEW_LINE}");
-    
     var textChunks = "";
     if(isJapanese)
     {
         
-        textChunks = text.match(/\S.{1,250}(?<=\。|$)/g);
+        textChunks = text.match(/\S.{1,220}(?<=\。|$)/g);
     }
     else
     {
-        textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,515}(?=\s|$)/g);
     }
    
     

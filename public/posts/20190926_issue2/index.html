@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>20190926_issue2 | Apollo News</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Apollo News</h1>
+
+  <nav>
+    <ul>
+    <li class="top-menu-option">
+      <a href="/">Home</a>
+    </li>
+    <li class="top-menu-option">
+      <a href="/posts">News</a>
+    </li>
+    <li class="top-menu-option">
+      <a href="/tags">Tags</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+
+<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+
+<h1>20190926_issue2</h1>
+
+
+
+  <time datetime="2024-08-31T12:17:39-04:00">August 31, 2024</time>
+
+<div class="translations">
+
+
+
+  
+  <a class=' selected ' href='/posts/20190926_issue2/'> English </a>
+  
+
+
+    
+</div>
+
+<div id="content">
+  <!-- you can put percent signs on this instead of <> to process markdown -->
+<p><div class="page">
+
+<div id="paper-heading">
+    <h1 id="paper-title">Apollo News</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            
+                Issue #2
+            
+        </div>
+        <div id="paper-date">
+            
+                September 26, 2019
+            
+        </div>
+    </div>
+</div></p>
+<!-- The main english article should not be more than 740 characters -->
+<!-- The main japanese article should not be more than 350 characters -->
+<div id="main-article" lang="55" class="article">
+
+<h2>UN Climate Action Summit</h2>
+<div class="author">By Matt</div>
+Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. She told world leaders that she was angry, she said, “You have stolen my dreams and my childhood with your empty words.”  Ms. Thunberg talked about climate change. She thinks that world leaders are not working to fix the problem.
+   Ms. Thunberg is a 16 year old girl from Sweden who is worried about the future. She told the world leaders, “We are in the beginning of a mass extinction, and all you can talk about is money and fairy tales of eternal economic growth. How dare you!”
+   Ms Thunberg and many young people believe that the damage to the climate that these countries are doing is a violation of their human rights. Students all over the world students are going on strike on September 27th to protest government inaction.
+</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    if ( document.getElementById("main-article").lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,220}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,515}(?=\s|$)/g);
+    }
+   
+    
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
+    var contNode = document.createTextNode(mainArticleContinued);
+    document.getElementById("main-article-cont").appendChild(contNode);
+    var continueNode = document.createElement("EM");
+    var contText = document.createTextNode(continueText);
+    continueNode.appendChild(contText);
+    mainArticle.append(continueNode);
+
+
+});
+
+</script>
+<img alt="Greta Thunberg at UN Climate Summit" class="feature-img" src="/posts/20190926_issue2/imgs/feature.png"><div class="quarter-article article">
+
+
+    <h2 id="useful-phrase">Useful Phrase</h2>
+<h3 id="whats-new">“What’s new?”</h3>
+<p><strong>Meaning:</strong>「最近、何かあった？」や「かわったことは？」など<br>
+<strong>When to use:</strong> When you greet someone<br>
+<strong>Who to use with:</strong> Friends and family.<br>
+<strong>How to respond:</strong> People usually say “Nothing.” or “Not much.”<br>
+<strong>Example conversation:</strong><br>
+<strong>Peter:</strong> Hey Mary, what’s new?<br>
+<strong>Mary:</strong> Nothing, how are you?<br>
+<strong>Peter:</strong> I’m good.</p>
+
+</div>
+<div class="quarter-article article">
+<!-- a quarter article should not be more than 630 char -->
+<h2 id="puzzle">Puzzle</h2>
+<img alt="KenKen Puzzle" class="puzzle-img" src="/posts/20190926_issue2/imgs/kenken.png"></div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>UN Climate Action Summit</li>
+<li>国連の温暖化対策サミット</li>
+<li>world leaders</li>
+<li>各国の代表</li>
+<li>stolen</li>
+<li>盗まれた</li>
+<li>childhood</li>
+<li>子供の時代</li>
+<li>empty words</li>
+<li>空虚のことば</li>
+<li>fix</li>
+<li>直す</li>
+<li>climate change</li>
+<li>地球温暖化</li>
+<li>greet</li>
+<li>挨拶する</li>
+<li>respond</li>
+<li>返事する；答える</li>
+<li>conversation</li>
+<li>会話</li>
+</ul>
+</div>
+<!-- END OF THE FIRST PAGE -->
+</div>
+<div class="page">
+<img alt="Ms. Whiskers" class="feature-img-left" src="/posts/20190926_issue2/imgs/feature.png"><div id="main-article-cont" class="article"></div>
+<div class="quarter-article article">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner">Art Corner</h2>
+<div class="author">By Matt</div>
+<img alt="Whale having a s&rsquo;more at a campfire" class="art-img" src="/posts/20190926_issue2/imgs/whale.png"></div>
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+    
+<!-- a quarter article should not be more than 600 char -->
+<h2>Review: Hinomaru Sumo</h2>
+<div class="author">By Matt</div>
+There are so many high school sports animes. I usually don’t like them. A lot of sports anime are similar and they are often repetitive. I still watch them sometimes because they are easy to understand and it’s good Japanese practice.
+Recently, I watched Hinomaru Sumo. The main character, Hinomaru Ushio, is a freshman in high school. He has dreams of becoming a professional sumo wrestler, even though he’s too short. 
+Hinomaru Sumo is like other sports anime because all the characters have their own special skills. For example, Ozeki uses pushing and Yuma uses slapping. 
+I like this anime because it's not as slow as other sports anime and I can learn a little bit about sumo.
+
+
+<!-- Change the Ramen rating number to be the number out of five -->
+<div class="ramen-ratings">
+
+
+
+
+Rating: 4 out of 5 bowls of ramen
+<br/>
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+
+</div>
+
+  
+</div>
+
+<div class="quarter-article article">
+
+
+    <!-- a quarter article should not be more than 630 char -->
+<h2 id="riddle-2">Riddle #2</h2>
+<p>How many months have 28 days?
+<br>
+<br>
+<br></p>
+<p>Answer: <button class="spoiler">All of them</button></p>
+
+
+</div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>
+<p>eternal economic growth</p>
+</li>
+<li>
+<p>永遠の経済成長</p>
+</li>
+<li>
+<p>mass extinction</p>
+</li>
+<li>
+<p>大絶滅</p>
+</li>
+<li>
+<p>how dare you</p>
+</li>
+<li>
+<p>よくもそなことを</p>
+</li>
+<li>
+<p>freshman</p>
+</li>
+<li>
+<p>一年生</p>
+</li>
+<li>
+<p>similar</p>
+</li>
+<li>
+<p>似ている</p>
+</li>
+<li>
+<p>repetitive</p>
+</li>
+<li>
+<p>ワンパターン</p>
+</li>
+<li>
+<p>even though ~</p>
+</li>
+<li>
+<p>~のに</p>
+</li>
+<li>
+<p>skill</p>
+</li>
+<li>
+<p>技</p>
+</li>
+<li>
+<p>pushing (in sumo)</p>
+</li>
+<li>
+<p>押し出し</p>
+</li>
+<li>
+<p>slapping (in sumo)</p>
+</li>
+<li>
+<p>張り手</p>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+  
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

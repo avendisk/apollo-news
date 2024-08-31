@@ -1,5 +1,5 @@
 +++
-title = "20190830_issue1"
+title = "Issue #1"
 date = 2024-08-22T19:52:38-04:00
 draft = false
 featured_image = "imgs/feature.jpg"
@@ -7,7 +7,7 @@ featured_image_caption = "feature caption"
 
 [params]
     paper_title = "Apollo News"
-    actual_date = 2020-06-22
+    actual_date = 2019-08-30
     issue_num = 1
 +++
 

@@ -74,7 +74,7 @@
         </div>
         <div id="paper-date">
             
-                1999年1月1日
+                2019年8月30日
             
         </div>
     </div>
@@ -101,16 +101,15 @@ window.addEventListener('DOMContentLoaded', function() {
     var mainArticle = document.getElementById("main-article");
     var text = mainArticle.innerHTML;
     text = text.replace(/\n/g,"{NEW_LINE}");
-    
     var textChunks = "";
     if(isJapanese)
     {
         
-        textChunks = text.match(/\S.{1,250}(?<=\。|$)/g);
+        textChunks = text.match(/\S.{1,220}(?<=\。|$)/g);
     }
     else
     {
-        textChunks = text.match(/\S.{1,420}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,515}(?=\s|$)/g);
     }
    
     
