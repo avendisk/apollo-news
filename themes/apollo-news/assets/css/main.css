@@ -2,13 +2,13 @@
   font-family: "Raleway";
   src:
     local("Raleway"),
-    url("/fonts/Raleway-VariableFont_wght.ttf") format("TrueType");
+    url("fonts/Raleway-VariableFont_wght.ttf") format("TrueType");
 }
 @font-face {
   font-family: "Spectral";
   src:
     local("Spectral"),
-    url("/fonts/Spectral-Regular.ttf") format("TrueType");
+    url("fonts/Spectral-Regular.ttf") format("TrueType");
 }
 :root {
   --main-bg-color: brown;
@@ -22,7 +22,7 @@ h1, h2, h3{
 body {
   max-width: 1000px;
   margin: 0 auto;
-  font-family: Spectral, sans-serif;
+  font-family: Spectral, serif;
 }
 main {
   text-align: center;
