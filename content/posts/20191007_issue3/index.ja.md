@@ -1,13 +1,13 @@
 +++
-title = "{{ replace .Name "-" " " | title }}"
-date = {{ .Date }}
+title = "20191007_issue3"
+date = 2024-09-02T02:22:59-04:00
 draft = true
 featured_image = "imgs/feature.png"
 featured_image_caption = "feature caption"
 
 [params]
     paper_title = "Apollo News"
-    actual_date = {{ .Date }}
+    actual_date = 2024-09-02T02:22:59-04:00
     issue_num = 1
 +++
 

@@ -16,11 +16,11 @@ window.addEventListener('DOMContentLoaded', function() {
     if(isJapanese)
     {
         // textChunks = text.match(/\S.{1,200}(?=\s|$)/g);
-        textChunks = text.match(/\S.{1,220}(?<=\。|$)/g);
+        textChunks = text.match(/\S.{1,200}(?<=\。|$)/g);
     }
     else
     {
-        textChunks = text.match(/\S.{1,515}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,490}(?=\s|$)/g);
     }
    
     // console.log(textChunks);

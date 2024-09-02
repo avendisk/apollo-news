@@ -105,11 +105,11 @@ window.addEventListener('DOMContentLoaded', function() {
     if(isJapanese)
     {
         
-        textChunks = text.match(/\S.{1,220}(?<=\。|$)/g);
+        textChunks = text.match(/\S.{1,200}(?<=\。|$)/g);
     }
     else
     {
-        textChunks = text.match(/\S.{1,515}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,490}(?=\s|$)/g);
     }
    
     
@@ -139,13 +139,14 @@ window.addEventListener('DOMContentLoaded', function() {
 <h2>リビュー: 進撃の巨人</h2>
 <div class="author">By マット</div>
 進撃の巨人を見たら、最初気づくことは血とグロテスクな巨人。巨人は変わてて馬鹿馬鹿しい。シーズン一の映像品質は高くてテレビより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラでもわかっていないから大丈夫。文句があれば、ほかのアニメのように話の進みはとても遅い。最近のエピソードは詰まらなくて見ながらほなこのことでもしました。
-<div class="ramen-ratings">
 
 
 
 
+
+<br>
 Rating: 3 out of 5 bowls of ramen
-<br/>
+<div class="ramen-img-container">
 
     <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
     
@@ -249,7 +250,7 @@ Rating: 3 out of 5 bowls of ramen
 </div>
 </div>
 <div class="page">
-<img alt="Ms. Whiskers" class="feature-img-left" src="/posts/20190830_issue1/imgs/mswhiskers.jpg"><div id="main-article-cont" class="article"></div>
+<img alt="Ms. Whiskers" class="feature-img-left" src="/posts/20190830_issue1/imgs/mswhiskers.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
 <div class="quarter-article article">
 <!-- a quarter article should not be more than 630 char -->
 <h2 id="art-corner">Art Corner</h2>

@@ -1,1 +1,11 @@
-<div id="main-article-cont" class="article"></div>
+{{ $grid_span := "3" }}
+
+
+{{ with .Get 0}}
+    {{ if eq . "textonly" }}
+        {{ $grid_span = "1" }} 
+    {{ end }}
+{{ end }}
+
+
+<div id="main-article-cont" style="grid-column:{{ $grid_span }} / 7;"  class="article"></div>

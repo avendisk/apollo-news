@@ -6,24 +6,24 @@
     <description>Recent content in Homepage on Apollo News</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Aug 2024 12:17:39 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2024 02:22:59 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>20190926_issue2</title>
+      <title>Issue #3 School Festivals</title>
+      <link>http://localhost:1313/posts/20191007_issue3/</link>
+      <pubDate>Mon, 02 Sep 2024 02:22:59 -0400</pubDate>
+      <guid>http://localhost:1313/posts/20191007_issue3/</guid>
+      <description>Apollo News&#xD;Issue #1&#xD;October 7, 2019&#xD;School Festivals&#xD;By Matt&#xD;School festivals in Japan are a big deal. They only happen once every three years. They are open to the public and have many different things going on. Each homeroom has their own project. For example, in the 1-1 homeroom they might have a haunted house, in 1-2, they might have a cafe, 1-3 might have carnival games, and there might be a concert in the gym.</description>
+    </item>
+    <item>
+      <title>Issue #2 UN Climate Action Summit</title>
       <link>http://localhost:1313/posts/20190926_issue2/</link>
       <pubDate>Sat, 31 Aug 2024 12:17:39 -0400</pubDate>
       <guid>http://localhost:1313/posts/20190926_issue2/</guid>
       <description>Apollo News&#xD;Issue #2&#xD;September 26, 2019&#xD;UN Climate Action Summit&#xD;By Matt&#xD;Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. She told world leaders that she was angry, she said, “You have stolen my dreams and my childhood with your empty words.” Ms. Thunberg talked about climate change. She thinks that world leaders are not working to fix the problem.&#xD;Ms. Thunberg is a 16 year old girl from Sweden who is worried about the future.</description>
     </item>
     <item>
-      <title>Test Bundle</title>
-      <link>http://localhost:1313/posts/test-bundle/</link>
-      <pubDate>Fri, 23 Aug 2024 00:48:42 -0400</pubDate>
-      <guid>http://localhost:1313/posts/test-bundle/</guid>
-      <description>Here&amp;rsquo;s the content section of this example file here is content inside the main article shrtocode&#xD;</description>
-    </item>
-    <item>
-      <title>Issue #1</title>
+      <title>Issue #1 Soma Nomaoi</title>
       <link>http://localhost:1313/posts/20190830_issue1/</link>
       <pubDate>Thu, 22 Aug 2024 19:52:38 -0400</pubDate>
       <guid>http://localhost:1313/posts/20190830_issue1/</guid>

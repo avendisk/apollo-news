@@ -1,5 +1,5 @@
 +++
-title = "Issue #1"
+title = "Issue #1 Soma Nomaoi"
 date = 2024-08-22T19:52:38-04:00
 draft = false
 featured_image = "imgs/feature.jpg"
@@ -103,9 +103,9 @@ Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque tit
 
 {{< quarter-article markdownify >}}
 ## Art Corner
-{{< author name="Yoshiko" >}}
+{{< author name="Matt" >}}
 
-![Ms. Whiskers](imgs/mswhiskers.jpg)
+![Jake the Dog Quote](imgs/jakethedog.png)
 {.art-img}
 {{< /quarter-article >}}
 

@@ -14,6 +14,7 @@ featured_image_caption = "feature caption"
 <!-- you can put percent signs on this instead of <> to process markdown -->
 {{< begin-page >}}
 {{< paper-heading >}}
+
 {{< main-article >}}
 <!-- The main english article should not be more than 740 characters -->
 <!-- The main japanese article should not be more than 350 characters -->
@@ -34,6 +35,8 @@ featured_image_caption = "feature caption"
 {{< articles/ramen-ratings 3 >}}
 
 {{< /quarter-article >}}
+
+
 
 {{< quarter-article markdownify >}}
 ## Useful Phrase
@@ -64,26 +67,6 @@ featured_image_caption = "feature caption"
 * wild
 * 荒っぽい；野生
 
-* phrase
-* フレーズ
-
-* pretty  
-* かなり
-
-* respond  
-* 返事する；答える
-
-* riddle
-* 謎々
-
-* bucks
-* ドル
-
-* recommend
-* 勧める
-
-* to suck at ~
-* ～が下手
 
 
 {{% /difficult-words %}}
@@ -119,7 +102,7 @@ featured_image_caption = "feature caption"
 {{< /quarter-article >}}
 
 {{% quarter-article %}}
-<!-- a quarter article should not be more than 630 char -->
+<!-- a quarter article should not be more than 600 char -->
 ## Puzzle
 
 ![Sudoku Puzzle](imgs/feature.jpg)
@@ -153,20 +136,7 @@ Answer:
 * pretty  
 * かなり
 
-* respond  
-* 返事する；答える
 
-* riddle
-* 謎々
-
-* bucks
-* ドル
-
-* recommend
-* 勧める
-
-* to suck at ~
-* ～が下手
 
 
 {{% /difficult-words %}}

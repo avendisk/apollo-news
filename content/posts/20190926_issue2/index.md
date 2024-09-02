@@ -1,5 +1,5 @@
 +++
-title = "20190926_issue2"
+title = "Issue #2 UN Climate Action Summit"
 date = 2024-08-31T12:17:39-04:00
 draft = false
 featured_image = "imgs/feature.png"
