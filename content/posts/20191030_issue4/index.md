@@ -1,31 +1,34 @@
 +++
-title = "20191007_issue3"
-date = 2024-09-02T02:22:59-04:00
+title = "20191030_issue4"
+date = 2024-09-03T16:16:44-04:00
 draft = true
 featured_image = "imgs/feature.png"
 featured_image_caption = "feature caption"
 
 [params]
     paper_title = "Apollo News"
-    actual_date = 2024-09-02T02:22:59-04:00
+    actual_date = 2024-09-03T16:16:44-04:00
     issue_num = 1
 +++
 
 <!-- you can put percent signs on this instead of <> to process markdown -->
 {{< begin-page >}}
 {{< paper-heading >}}
+
 {{< main-article >}}
 <!-- The main english article should not be more than 740 characters -->
 <!-- The main japanese article should not be more than 350 characters -->
 <h2> INSERT_ARTICLE_TITLE_HERE </h2>
 {{< author name="INSERT_AUTHOR_NAME_HERE" >}}
 
+On October 12th, Typhoon Hagibis (Typhoon 19) hit Japan. Flooding happened all over Soma. Both of the main rivers in Soma, Koizumi and Uta flooded. Around one quarter of the buildings in Soma flooded. Most of Soma lost water for one week. In the Soma area 21,000 people suffered from the water outage.  Only two weeks later there were heavy rains. The rains flooded more parts of the town. With the rains on the 25th and the typhoon on the 12th, a total of more than 3700 buildings were flooded. Now most of Soma is recovering but it will take a long time to be complete. 
+
 {{< /main-article >}}
 
-![ALT_TEXT_HERE](imgs/feature.jpg)
+![Road washout in Soma](imgs/floodsoma.jpg)
 {.feature-img}
 
-{{< quarter-article >}}
+{{< articles/custom-article >}}
 <!-- a quarter article should not be more than 600 char -->
 <h2>Review: REVIEW_TITLE</h2>
 {{< author name="INSERT_AUTHOR_NAME_HERE" >}}
@@ -33,7 +36,9 @@ featured_image_caption = "feature caption"
 <!-- Change the Ramen rating number to be the number out of five -->
 {{< articles/ramen-ratings 3 >}}
 
-{{< /quarter-article >}}
+{{< /articles/custom-article >}}
+
+
 
 {{< quarter-article markdownify >}}
 ## Useful Phrase
@@ -54,7 +59,7 @@ featured_image_caption = "feature caption"
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->
-## Difficult Words
+
 * greet
 * 挨拶する 
 
@@ -64,26 +69,6 @@ featured_image_caption = "feature caption"
 * wild
 * 荒っぽい；野生
 
-* phrase
-* フレーズ
-
-* pretty  
-* かなり
-
-* respond  
-* 返事する；答える
-
-* riddle
-* 謎々
-
-* bucks
-* ドル
-
-* recommend
-* 勧める
-
-* to suck at ~
-* ～が下手
 
 
 {{% /difficult-words %}}
@@ -119,7 +104,7 @@ featured_image_caption = "feature caption"
 {{< /quarter-article >}}
 
 {{% quarter-article %}}
-<!-- a quarter article should not be more than 630 char -->
+<!-- a quarter article should not be more than 600 char -->
 ## Puzzle
 
 ![Sudoku Puzzle](imgs/feature.jpg)
@@ -153,20 +138,7 @@ Answer:
 * pretty  
 * かなり
 
-* respond  
-* 返事する；答える
 
-* riddle
-* 謎々
-
-* bucks
-* ドル
-
-* recommend
-* 勧める
-
-* to suck at ~
-* ～が下手
 
 
 {{% /difficult-words %}}

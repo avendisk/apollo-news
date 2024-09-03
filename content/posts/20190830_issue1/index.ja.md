@@ -30,24 +30,24 @@ featured_image_caption = "feature caption"
 <!-- a quarter article should not be more than 630 char -->
 <h2>リビュー: 進撃の巨人</h2>
 {{< author name="マット" >}}
-進撃の巨人を見たら、最初気づくことは血とグロテスクな巨人。巨人は変わてて馬鹿馬鹿しい。シーズン一の映像品質は高くてテレビより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラでもわかっていないから大丈夫。文句があれば、ほかのアニメのように話の進みはとても遅い。最近のエピソードは詰まらなくて見ながらほなこのことでもしました。
+進撃の巨人を見て、最初に気がつくことは血とグロテスクな巨人です。巨人は歪で滑稽な印象を受けます。シーズン一の映像品質は高くてテレビというより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラもわかっていないから大丈夫。文句をつけるとすれば、ほかのアニメのように話の進みがとても遅い。最近のエピソードは詰まらなくて他のことをしながら見ました。
 {{< articles/ramen-ratings 3 >}}
 {{< /quarter-article >}}
 
 {{< quarter-article markdownify >}}
-## Useful Phrase
-### “INSERT PHRASE HERE”
+## 便利なフレーズ
+### 「なんだべ」
 
-**Meaning:**
-**When to use:** 
-**Who to use with:** 
-**How to respond:** 
+**意味:**「なんですか」もしくは「なんてこった」  
+**使うとき:** わからないときとか、困ったとき  
+**誰と使う:** 友達や家族  
+**返し言葉:** 特にない 
 
 
 **Example conversation:**  
-**Peter:**
-**Mary:** 
-**Peter:** 
+パソコンがこわれた時に画面に向かって  
+**りな:**   「なんだべ」  
+
 {{< /quarter-article >}}
 
 
@@ -60,7 +60,7 @@ featured_image_caption = "feature caption"
 * 行進する
 
 * strange
-* 変な
+* 変な；歪
 
 * quality  
 * 質
@@ -89,7 +89,7 @@ featured_image_caption = "feature caption"
 
 {{< begin-page >}}
 
-![Ms. Whiskers](imgs/mswhiskers.jpg)
+![Noumakake](imgs/noumakake.jpg)
 {.feature-img-left}
 
 {{% main-article-cont %}}
@@ -124,11 +124,14 @@ featured_image_caption = "feature caption"
 
 {{< quarter-article markdownify >}}
 <!-- a quarter article should not be more than 630 char -->
-## Riddle #
-
+## Riddle #1
+パンはパンでも食べらないパンとはなんですか？
+<br>
+<br>
+<br>
 Answer:
 
-<button class="spoiler">INSERT_RIDDLE_ANSWER_HERE</button>
+<button class="spoiler">フライパン</button>
 {{< /quarter-article >}}
 
 {{% difficult-words %}}

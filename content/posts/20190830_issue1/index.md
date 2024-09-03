@@ -32,7 +32,7 @@ Many people from Soma have never seen the races or the horse-catching. I recomme
 {{< quarter-article >}}
 <h2>Review: Attack on Titan (Anime)</h2>
 {{< author name="Matt" >}}
-Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque titans. The titans very strange. After the first season, the animation in this show is very high quality, more like a movie than a TV show. The story, well, the story is crazy. I watch this show in Japanese with no English subtitles. Most of the time I don’t understand the story. But the characters in the story also have no idea, so it’s ok. Like most anime, the story moves very slowly, which is my biggest complaint. In recent episodes, I would get bored and do other things while I was watching.
+Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque titans. The titan are so strange that it is funny. After the first season, the animation in this show is very high quality, more like a movie than a TV show. The story, well, the story is crazy. I watch this show in Japanese with no English subtitles. Most of the time I don’t understand the story. But the characters in the story also have no idea, so it’s ok. Like most anime, the story moves very slowly, which is my biggest complaint. In recent episodes, I would get bored and do other things while I was watching.
 {{< articles/ramen-ratings 3 >}}
 {{< /quarter-article >}}
 
@@ -44,7 +44,7 @@ Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque tit
 や「最近、何かあった？」  
 や「かわったことは？」  
 や「どうしたの？」など   
-**When to use:** When you greet someone.  
+**When to use:** When you greet someone. 
 **Who to use with:** Friends and family.  
 **How to respond:** People usually say “Nothing.” or “Not much.”
 

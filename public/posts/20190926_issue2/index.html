@@ -76,7 +76,7 @@
 </div></p>
 <!-- The main english article should not be more than 740 characters -->
 <!-- The main japanese article should not be more than 350 characters -->
-<div id="main-article" lang="55" class="article">
+<div id="main-article" class="article">
 
 <h2>UN Climate Action Summit</h2>
 <div class="author">By Matt</div>
@@ -88,7 +88,7 @@ Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. 
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
-    if ( document.getElementById("main-article").lang === "ja")
+    if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
         continueText = "続きは次のページ。。。";
@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     else
     {
-        textChunks = text.match(/\S.{1,490}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
     }
    
     
@@ -215,7 +215,11 @@ I like this anime because it's not as slow as other sports anime and I can learn
 
 
 <br>
-Rating: 4 out of 5 bowls of ramen
+
+    Rating: 4 out of 5 bowls of ramen
+
+
+
 <div class="ramen-img-container">
 
     <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">

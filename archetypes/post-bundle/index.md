@@ -26,7 +26,7 @@ featured_image_caption = "feature caption"
 ![ALT_TEXT_HERE](imgs/feature.jpg)
 {.feature-img}
 
-{{< quarter-article >}}
+{{< articles/custom-article >}}
 <!-- a quarter article should not be more than 600 char -->
 <h2>Review: REVIEW_TITLE</h2>
 {{< author name="INSERT_AUTHOR_NAME_HERE" >}}
@@ -34,7 +34,7 @@ featured_image_caption = "feature caption"
 <!-- Change the Ramen rating number to be the number out of five -->
 {{< articles/ramen-ratings 3 >}}
 
-{{< /quarter-article >}}
+{{< /articles/custom-article >}}
 
 
 
@@ -120,7 +120,6 @@ Answer:
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->
-## Difficult Words
 * greet
 * 挨拶する 
 

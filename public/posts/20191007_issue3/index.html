@@ -50,12 +50,6 @@
   
   <a class=' selected ' href='/posts/20191007_issue3/'> English </a>
   
-    <span class="vertical-divider">|</span> 
-  
-
-  
-  <a class='' href='/ja/posts/20191007_issue3/'> 日本語 </a>
-  
 
 
     
@@ -82,7 +76,7 @@
 </div></p>
 <!-- The main english article should not be more than 740 characters -->
 <!-- The main japanese article should not be more than 350 characters -->
-<div id="main-article" lang="" class="article">
+<div id="main-article" class="article">
 
 <h2>School Festivals</h2>
 <div class="author">By Matt</div>
@@ -94,7 +88,7 @@ Mayday is a one day event with very little preparation. In Japan, a high school 
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
-    if ( document.getElementById("main-article").lang === "ja")
+    if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
         continueText = "続きは次のページ。。。";
@@ -197,7 +191,11 @@ Of my friends, I was the only one who didn’t like DBZ. I thought the fights we
 
 
 <br>
-Rating: 3 out of 5 bowls of ramen
+
+    Rating: 3 out of 5 bowls of ramen
+
+
+
 <div class="ramen-img-container">
 
     <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">

@@ -4,7 +4,13 @@
 {{ $emptyramen := resources.Get "imgs/empty-ramen.png" }}
 {{ $remaining := sub 5 $rating }}
 <br>
-Rating: {{ $rating }} out of 5 bowls of ramen
+{{ if eq .Site.Language.LanguageCode "ja" }}
+    評価：５ラーメン中の{{ $rating }}ラーメン
+{{ else }}
+    Rating: {{ $rating }} out of 5 bowls of ramen
+{{ end }}
+
+
 <div class="ramen-img-container">
 {{ range seq $rating }}
     <img class="ramen-img" src="{{ $fullramen.Permalink }}">

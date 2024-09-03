@@ -80,7 +80,7 @@
     </div>
 </div></p>
 <!-- The main article should not be more than 740 characters -->
-<div id="main-article" lang="ja" class="article">
+<div id="main-article" class="article">
 
 <h2>相馬野馬追</h2>
 <div class="author">By Matt</div>
@@ -92,7 +92,7 @@
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
-    if ( document.getElementById("main-article").lang === "ja")
+    if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
         continueText = "続きは次のページ。。。";
@@ -138,14 +138,18 @@ window.addEventListener('DOMContentLoaded', function() {
 <!-- a quarter article should not be more than 630 char -->
 <h2>リビュー: 進撃の巨人</h2>
 <div class="author">By マット</div>
-進撃の巨人を見たら、最初気づくことは血とグロテスクな巨人。巨人は変わてて馬鹿馬鹿しい。シーズン一の映像品質は高くてテレビより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラでもわかっていないから大丈夫。文句があれば、ほかのアニメのように話の進みはとても遅い。最近のエピソードは詰まらなくて見ながらほなこのことでもしました。
+進撃の巨人を見て、最初に気がつくことは血とグロテスクな巨人です。巨人は歪で滑稽な印象を受けます。シーズン一の映像品質は高くてテレビというより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラもわかっていないから大丈夫。文句をつけるとすれば、ほかのアニメのように話の進みがとても遅い。最近のエピソードは詰まらなくて他のことをしながら見ました。
 
 
 
 
 
 <br>
-Rating: 3 out of 5 bowls of ramen
+
+    評価：５ラーメン中の3ラーメン
+
+
+
 <div class="ramen-img-container">
 
     <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
@@ -169,16 +173,15 @@ Rating: 3 out of 5 bowls of ramen
 <div class="quarter-article article">
 
 
-    <h2 id="useful-phrase">Useful Phrase</h2>
-<h3 id="insert-phrase-here">“INSERT PHRASE HERE”</h3>
-<p><strong>Meaning:</strong>
-<strong>When to use:</strong>
-<strong>Who to use with:</strong>
-<strong>How to respond:</strong></p>
+    <h2 id="便利なフレーズ">便利なフレーズ</h2>
+<h3 id="なんだべ">「なんだべ」</h3>
+<p><strong>意味:</strong>「なんですか」もしくは「なんてこった」<br>
+<strong>使うとき:</strong> わからないときとか、困ったとき<br>
+<strong>誰と使う:</strong> 友達や家族<br>
+<strong>返し言葉:</strong> 特にない</p>
 <p><strong>Example conversation:</strong><br>
-<strong>Peter:</strong>
-<strong>Mary:</strong>
-<strong>Peter:</strong></p>
+パソコンがこわれた時に画面に向かって<br>
+<strong>りな:</strong>   「なんだべ」</p>
 
 
 </div>
@@ -202,7 +205,7 @@ Rating: 3 out of 5 bowls of ramen
 <p>strange</p>
 </li>
 <li>
-<p>変な</p>
+<p>変な；歪</p>
 </li>
 <li>
 <p>quality</p>
@@ -250,7 +253,7 @@ Rating: 3 out of 5 bowls of ramen
 </div>
 </div>
 <div class="page">
-<img alt="Ms. Whiskers" class="feature-img-left" src="/posts/20190830_issue1/imgs/mswhiskers.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
+<img alt="Noumakake" class="feature-img-left" src="/posts/20190830_issue1/imgs/noumakake.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
 <div class="quarter-article article">
 <!-- a quarter article should not be more than 630 char -->
 <h2 id="art-corner">Art Corner</h2>
@@ -268,9 +271,13 @@ Rating: 3 out of 5 bowls of ramen
 
 
     <!-- a quarter article should not be more than 630 char -->
-<h2 id="riddle">Riddle</h2>
-<p>Answer:</p>
-<p><button class="spoiler">INSERT_RIDDLE_ANSWER_HERE</button></p>
+<h2 id="riddle-1">Riddle #1</h2>
+<p>パンはパンでも食べらないパンとはなんですか？
+<br>
+<br>
+<br>
+Answer:</p>
+<p><button class="spoiler">フライパン</button></p>
 
 
 </div>

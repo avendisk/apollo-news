@@ -1,9 +1,9 @@
-<div id="main-article" lang="{{ .Get 0 }}" class="article">{{ .Inner }}</div>
+<div id="main-article" class="article">{{ .Inner }}</div>
 <script>
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
-    if ( document.getElementById("main-article").lang === "ja")
+    if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
         continueText = "続きは次のページ。。。";
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     else
     {
-        textChunks = text.match(/\S.{1,490}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
     }
    
     // console.log(textChunks);

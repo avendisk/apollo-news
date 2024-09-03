@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/20191030_issue4/</loc>
+    <lastmod>2024-09-03T16:16:44-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/20191007_issue3/</loc>
+    <lastmod>2024-09-02T02:22:59-04:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/20190926_issue2/</loc>
     <lastmod>2024-08-31T12:17:39-04:00</lastmod>
   </url><url>
