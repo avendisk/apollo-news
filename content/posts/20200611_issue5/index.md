@@ -1,13 +1,13 @@
 +++
-title = "{{ replace .Name "-" " " | title }}"
-date = {{ .Date }}
+title = "Issue #5: Pandemic"
+date = 2024-09-04T01:00:31-04:00
 draft = true
 featured_image = "imgs/feature.png"
 featured_image_caption = "feature caption"
 
 [params]
     paper_title = "Apollo News"
-    actual_date = {{ .Date }}
+    actual_date = 2024-09-04T01:00:31-04:00
     issue_num = 1
 +++
 
@@ -15,14 +15,21 @@ featured_image_caption = "feature caption"
 {{< begin-page >}}
 {{< paper-heading >}}
 
-
-
 <!-- The main english article should not be more than 740 characters -->
 <!-- The main japanese article should not be more than 350 characters -->
 {{< main-article >}}
-<h2> INSERT_ARTICLE_TITLE_HERE </h2>
-{{< author name="INSERT_AUTHOR_NAME_HERE" >}}
+<h2> Pandemic </h2>
+{{< author name="Matt" >}}
+In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is often called COVID-19 or the coronavirus. By February, the virus spread all around the world. Many countries were not prepared for a pandemic and because of that many people caught the virus. Over 7 million people have caught the virus and over 4 hundred thousand people have died.   To stop the spread of COVID-19 many countries have taken precautions. For example, stopping traveling, working from home, canceling big events and social distancing. In some places things are going back to normal. In Japan, school is having class, restaurants are open and people are going back to work. It’s important to remember a few things to prevent another outbreak.
 
+<ul>
+    <li>Try to wash your hands often</li>
+    <li>Wear a mask</li>
+    <li>Don’t touch your eyes nose or mouth </li>
+    <li>Cover your nose and mouth when you cough and sneeze</li>
+    <li>Stay home if you feel sick</li>
+    <li>If you have a fever and a cough, see a doctor. (But call first!)</li>
+</ul>
 {{< /main-article >}}
 
 ![ALT_TEXT_HERE](imgs/feature.jpg)

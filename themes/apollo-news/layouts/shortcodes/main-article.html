@@ -3,6 +3,11 @@
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
     if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
@@ -31,12 +36,12 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contNode = document.createTextNode(mainArticleContinued);
-    document.getElementById("main-article-cont").appendChild(contNode);
-    var continueNode = document.createElement("EM");
+    var contTextNode = document.createTextNode(mainArticleContinued);
+    continueNode.appendChild(contTextNode);
+    var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
-    continueNode.appendChild(contText);
-    mainArticle.append(continueNode);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
 
 
 });

@@ -29,13 +29,6 @@ Many people from Soma have never seen the races or the horse-catching. I recomme
 
 <!-- you can put percent signs on this instead of <> to process markdown -->
 
-{{< quarter-article >}}
-<h2>Review: Attack on Titan (Anime)</h2>
-{{< author name="Matt" >}}
-Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque titans. The titan are so strange that it is funny. After the first season, the animation in this show is very high quality, more like a movie than a TV show. The story, well, the story is crazy. I watch this show in Japanese with no English subtitles. Most of the time I don’t understand the story. But the characters in the story also have no idea, so it’s ok. Like most anime, the story moves very slowly, which is my biggest complaint. In recent episodes, I would get bored and do other things while I was watching.
-{{< articles/ramen-ratings 3 >}}
-{{< /quarter-article >}}
-
 {{< quarter-article markdownify >}}
 ## Useful Phrase
 ### “What’s up?”
@@ -44,7 +37,7 @@ Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque tit
 や「最近、何かあった？」  
 や「かわったことは？」  
 や「どうしたの？」など   
-**When to use:** When you greet someone. 
+**When to use:** When you greet someone.   
 **Who to use with:** Friends and family.  
 **How to respond:** People usually say “Nothing.” or “Not much.”
 
@@ -53,6 +46,13 @@ Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque tit
 **Peter:** Hey Mary, what’s up?  
 **Mary:** Nothing, what’s up with you?  
 **Peter:** Not much, I’m doing some homework.  
+{{< /quarter-article >}}
+
+{{< quarter-article >}}
+<h2>Review: Attack on Titan (Anime)</h2>
+{{< author name="Matt" >}}
+Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque titans. The titan are so strange that it is funny. After the first season, the animation in this show is very high quality, more like a movie than a TV show. The story, well, the story is crazy. I watch this show in Japanese with no English subtitles. Most of the time I don’t understand the story. But the characters in the story also have no idea, so it’s ok. Like most anime, the story moves very slowly, which is my biggest complaint. In recent episodes, I would get bored and do other things while I was watching.
+{{< articles/ramen-ratings 3 >}}
 {{< /quarter-article >}}
 
 
@@ -101,39 +101,38 @@ Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque tit
 
 
 
-{{< quarter-article markdownify >}}
+{{% articles/custom-article %}}
 ## Art Corner
 {{< author name="Matt" >}}
 
 ![Jake the Dog Quote](imgs/jakethedog.png)
 {.art-img}
-{{< /quarter-article >}}
+{{% /articles/custom-article %}}
 
-{{< quarter-article markdownify >}}
+{{% articles/custom-article %}}
 ## Art Corner
 {{< author name="Matt" >}}
 
 ![Trump Buys Greenland](imgs/trump.png)
 {.art-img}
 
+{{% /articles/custom-article %}}
 
-{{< /quarter-article >}}
-
-{{< quarter-article markdownify >}}
+{{% articles/custom-article %}}
 ## Puzzle
 
 ![Sudoku Puzzle](imgs/sudoku.png)
 {.puzzle-img}
-{{< /quarter-article >}}
+{{% /articles/custom-article %}}
 
-{{< quarter-article markdownify >}}
+{{% articles/custom-article %}}
 ## Riddle #1
 Four large people share one small umbrella but no one gets wet. Why?
-
+<br><br><br>
 Answer:
 
 <button class="spoiler">It's not raining</button>
-{{< /quarter-article >}}
+{{% /articles/custom-article %}}
 
 {{% difficult-words %}}
 

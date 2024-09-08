@@ -31,7 +31,7 @@ Mayday is a one day event with very little preparation. In Japan, a high school 
 
 
 
-{{% articles/custom-article %}}
+{{% articles/custom-article 2 %}}
 <!-- a quarter article should not be more than 600 char -->
 ## Art Corner
 {{< author name="Yuichi" >}}
@@ -41,13 +41,13 @@ Mayday is a one day event with very little preparation. In Japan, a high school 
 {{% /articles/custom-article %}}
 
 
-{{% quarter-article %}}
+{{% articles/custom-article 2 %}}
 <!-- a quarter article should not be more than 600 char -->
 ## Puzzle: Sudoku
 
 ![Sudoku Puzzle](imgs/sudoku2.png)
 {.puzzle-img}
-{{% /quarter-article %}}
+{{% /articles/custom-article %}}
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->
@@ -90,17 +90,17 @@ Of my friends, I was the only one who didn’t like DBZ. I thought the fights we
 
 {{< /articles/custom-article >}}
 
-{{% quarter-article %}}
+{{% articles/custom-article %}}
 <!-- a quarter article should not be more than 600 char -->
 ## Art Corner
 {{< author name="Nate" >}}
 
 ![Matt Crying by Nate](imgs/cryingmatt.png)
 {.art-img}
-{{% /quarter-article %}}
+{{% /articles/custom-article %}}
 
 
-{{< quarter-article markdownify >}}
+{{% articles/custom-article %}}
 <!-- a quarter article should not be more than 630 char -->
 ## Riddle #3
 What has four legs and a back but no body?
@@ -109,7 +109,7 @@ What has four legs and a back but no body?
 <br>
 Answer:
 <button class="spoiler">A Chair</button>
-{{< /quarter-article >}}
+{{% /articles/custom-article %}}
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->

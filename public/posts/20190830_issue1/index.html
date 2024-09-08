@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Issue #1 Soma Nomaoi | Apollo News</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.780f33104fa610843c12a027fbe9497e92534d46b1ebd4c778b51330fb8c8bc2.css" integrity="sha256-eA8zEE&#43;mEIQ8EqAn&#43;&#43;lJfpJTTUax69THeLUTMPuMi8I=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -35,7 +35,7 @@
   <main>
     
 
-<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+<link rel="stylesheet" href="/css/post.min.css">
 
 <h1>Issue #1 Soma Nomaoi</h1>
 
@@ -92,6 +92,11 @@ Many people from Soma have never seen the races or the horse-catching. I recomme
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
     if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
@@ -109,7 +114,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     else
     {
-        textChunks = text.match(/\S.{1,490}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
     }
    
     
@@ -120,18 +125,37 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contNode = document.createTextNode(mainArticleContinued);
-    document.getElementById("main-article-cont").appendChild(contNode);
-    var continueNode = document.createElement("EM");
+    var contTextNode = document.createTextNode(mainArticleContinued);
+    continueNode.appendChild(contTextNode);
+    var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
-    continueNode.appendChild(contText);
-    mainArticle.append(continueNode);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
 
 
 });
 
 </script></p>
 <img alt="Soma Nomaoi Race" class="feature-img" src="/posts/20190830_issue1/imgs/feature.jpg"><!-- you can put percent signs on this instead of <> to process markdown -->
+<div class="quarter-article article">
+
+
+    <h2 id="useful-phrase">Useful Phrase</h2>
+<h3 id="whats-up">“What’s up?”</h3>
+<p><strong>Meaning:</strong>「何している？」<br>
+や「最近、何かあった？」<br>
+や「かわったことは？」<br>
+や「どうしたの？」など<br>
+<strong>When to use:</strong> When you greet someone.<br>
+<strong>Who to use with:</strong> Friends and family.<br>
+<strong>How to respond:</strong> People usually say “Nothing.” or “Not much.”</p>
+<p><strong>Example conversation:</strong><br>
+<strong>Peter:</strong> Hey Mary, what’s up?<br>
+<strong>Mary:</strong> Nothing, what’s up with you?<br>
+<strong>Peter:</strong> Not much, I’m doing some homework.</p>
+
+
+</div>
 <div class="quarter-article article">
 
 
@@ -152,40 +176,21 @@ Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque tit
 
 <div class="ramen-img-container">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+    <img class="ramen-img" src="/imgs/empty-ramen.png">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+    <img class="ramen-img" src="/imgs/empty-ramen.png">
 
 </div>
-
-
-</div>
-<div class="quarter-article article">
-
-
-    <h2 id="useful-phrase">Useful Phrase</h2>
-<h3 id="whats-up">“What’s up?”</h3>
-<p><strong>Meaning:</strong>「何している？」<br>
-や「最近、何かあった？」<br>
-や「かわったことは？」<br>
-や「どうしたの？」など<br>
-<strong>When to use:</strong> When you greet someone.
-<strong>Who to use with:</strong> Friends and family.<br>
-<strong>How to respond:</strong> People usually say “Nothing.” or “Not much.”</p>
-<p><strong>Example conversation:</strong><br>
-<strong>Peter:</strong> Hey Mary, what’s up?<br>
-<strong>Mary:</strong> Nothing, what’s up with you?<br>
-<strong>Peter:</strong> Not much, I’m doing some homework.</p>
 
 
 </div>
@@ -257,38 +262,23 @@ Attack on Titan (進撃の巨人) has a lot of blood, and a lot of grotesque tit
 </div>
 <div class="page">
 <img alt="Noumakake" class="feature-img-left" src="/posts/20190830_issue1/imgs/noumakake.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
-<div class="quarter-article article">
-
-
-    <h2 id="art-corner">Art Corner</h2>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<h2 id="art-corner">Art Corner</h2>
 <div class="author">By Matt</div>
-<img alt="Jake the Dog Quote" class="art-img" src="imgs/jakethedog.png">
-
-</div>
-<div class="quarter-article article">
-
-
-    <h2 id="art-corner">Art Corner</h2>
+<img alt="Jake the Dog Quote" class="art-img" src="/posts/20190830_issue1/imgs/jakethedog.png"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<h2 id="art-corner-1">Art Corner</h2>
 <div class="author">By Matt</div>
-<img alt="Trump Buys Greenland" class="art-img" src="imgs/trump.png">
-
-</div>
-<div class="quarter-article article">
-
-
-    <h2 id="puzzle">Puzzle</h2>
-<img alt="Sudoku Puzzle" class="puzzle-img" src="imgs/sudoku.png">
-
-</div>
-<div class="quarter-article article">
-
-
-    <h2 id="riddle-1">Riddle #1</h2>
-<p>Four large people share one small umbrella but no one gets wet. Why?</p>
-<p>Answer:</p>
+<img alt="Trump Buys Greenland" class="art-img" src="/posts/20190830_issue1/imgs/trump.png"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<h2 id="puzzle">Puzzle</h2>
+<img alt="Sudoku Puzzle" class="puzzle-img" src="/posts/20190830_issue1/imgs/sudoku.png"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<h2 id="riddle-1">Riddle #1</h2>
+<p>Four large people share one small umbrella but no one gets wet. Why?
+<br><br><br>
+Answer:</p>
 <p><button class="spoiler">It&rsquo;s not raining</button></p>
-
-
 </div>
 <div class="difficult-words article">
     <h2>Difficult Words</h2>

@@ -1,4 +1,3 @@
-baseURL = 'https://avendisk.github.io/'
 languageCode = 'en'
 title = 'Apollo News'
 theme = 'apollo-news'

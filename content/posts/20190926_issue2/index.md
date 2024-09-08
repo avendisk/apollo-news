@@ -46,13 +46,13 @@ Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. 
 
 {{< /quarter-article >}}
 
-{{% quarter-article %}}
+{{% articles/custom-article 2 %}}
 <!-- a quarter article should not be more than 630 char -->
 ## Puzzle
 
 ![KenKen Puzzle](imgs/kenken.png)
 {.puzzle-img}
-{{% /quarter-article %}}
+{{% /articles/custom-article %}}
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->
@@ -79,33 +79,35 @@ Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. 
 
 
 
-
-
-
-
-
 {{% /difficult-words %}}
 
 <!-- END OF THE FIRST PAGE -->
 {{< end-page >}}
 
+
+<!-- -------------------------------------------------------- -->
+
+<!-- ---------------- BEGINNING OF PAGE 2-------------------- -->
+
+<!-- -------------------------------------------------------- -->
+
 {{< begin-page >}}
 
-![Ms. Whiskers](imgs/feature.png)
+![Greta Again](imgs/feature.png)
 {.feature-img-left}
 
 {{% main-article-cont %}}
 
 
 
-{{% quarter-article %}}
+{{% articles/custom-article %}}
 <!-- a quarter article should not be more than 600 char -->
 ## Art Corner
 {{< author name="Matt" >}}
 
 ![Whale having a s'more at a campfire](imgs/whale.png)
 {.art-img}
-{{% /quarter-article %}}
+{{% /articles/custom-article %}}
 
 
 
@@ -125,7 +127,7 @@ I like this anime because it's not as slow as other sports anime and I can learn
 {{< /articles/custom-article >}}
 
 
-{{< quarter-article markdownify >}}
+{{% articles/custom-article %}}
 <!-- a quarter article should not be more than 630 char -->
 ## Riddle #2
 How many months have 28 days?
@@ -137,7 +139,7 @@ How many months have 28 days?
   
 
 Answer: <button class="spoiler">All of them</button>
-{{< /quarter-article >}}
+{{% /articles/custom-article %}}
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->

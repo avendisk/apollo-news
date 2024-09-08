@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>20191030_issue4 | Apollo News</title>
+<title>Issue #4: Flooding In Soma | Apollo News</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.780f33104fa610843c12a027fbe9497e92534d46b1ebd4c778b51330fb8c8bc2.css" integrity="sha256-eA8zEE&#43;mEIQ8EqAn&#43;&#43;lJfpJTTUax69THeLUTMPuMi8I=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -35,9 +35,9 @@
   <main>
     
 
-<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+<link rel="stylesheet" href="/css/post.min.css">
 
-<h1>20191030_issue4</h1>
+<h1>Issue #4: Flooding In Soma</h1>
 
 
 
@@ -74,11 +74,11 @@
         </div>
     </div>
 </div></p>
-<div id="main-article" class="article">
 <!-- The main english article should not be more than 740 characters -->
 <!-- The main japanese article should not be more than 350 characters -->
-<h2> INSERT_ARTICLE_TITLE_HERE </h2>
-<div class="author">By INSERT_AUTHOR_NAME_HERE</div>
+<div id="main-article" class="article">
+<h2> Flooding In Soma </h2>
+<div class="author">By Matt</div>
 
 On October 12th, Typhoon Hagibis (Typhoon 19) hit Japan. Flooding happened all over Soma. Both of the main rivers in Soma, Koizumi and Uta flooded. Around one quarter of the buildings in Soma flooded. Most of Soma lost water for one week. In the Soma area 21,000 people suffered from the water outage.  Only two weeks later there were heavy rains. The rains flooded more parts of the town. With the rains on the 25th and the typhoon on the 12th, a total of more than 3700 buildings were flooded. Now most of Soma is recovering but it will take a long time to be complete. 
 
@@ -87,6 +87,11 @@ On October 12th, Typhoon Hagibis (Typhoon 19) hit Japan. Flooding happened all o
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
     if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
@@ -115,172 +120,111 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contNode = document.createTextNode(mainArticleContinued);
-    document.getElementById("main-article-cont").appendChild(contNode);
-    var continueNode = document.createElement("EM");
+    var contTextNode = document.createTextNode(mainArticleContinued);
+    continueNode.appendChild(contTextNode);
+    var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
-    continueNode.appendChild(contText);
-    mainArticle.append(continueNode);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
 
 
 });
 
 </script>
-<img alt="Road washout in Soma" class="feature-img" src="/posts/20191030_issue4/imgs/floodsoma.jpg">
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
-    
+<img alt="Road washout in Soma" class="feature-img" src="/posts/20191030_issue4/imgs/feature.jpg"><div class="quarter-article article">
 <!-- a quarter article should not be more than 600 char -->
-<h2>Review: REVIEW_TITLE</h2>
-<div class="author">By INSERT_AUTHOR_NAME_HERE</div>
-
-<!-- Change the Ramen rating number to be the number out of five -->
-
-
-
-
-
+<h2 id="art-corner">Art Corner</h2>
+<div class="author">By Matt</div>
+<img alt="A Punk Cockatoo" class="art-img" src="/posts/20191030_issue4/imgs/cockatoo.png"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner-1">Art Corner</h2>
+<div class="author">By Matt</div>
+<img alt="Stencil Art" class="art-img" src="/posts/20191030_issue4/imgs/modelstencil.png"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<h2 id="riddle-4">Riddle #4</h2>
+<p>Which word in the dictionary is spelled incorrectly?
 <br>
-
-    Rating: 3 out of 5 bowls of ramen
-
-
-
-<div class="ramen-img-container">
-
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
-    
-
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
-    
-
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
-    
-
-
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
-
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
-
-</div>
-
-  
-</div>
-
-<div class="quarter-article article">
-
-
-    <h2 id="useful-phrase">Useful Phrase</h2>
-<h3 id="insert-phrase-here">“INSERT PHRASE HERE”</h3>
-<p><strong>Meaning:</strong>
-<strong>When to use:</strong>
-<strong>Who to use with:</strong>
-<strong>How to respond:</strong></p>
-<p><strong>Example conversation:</strong><br>
-<strong>Peter:</strong>
-<strong>Mary:</strong>
-<strong>Peter:</strong></p>
-
-
+<br>
+<br>
+Answer: <button class="spoiler">incorrectly</button></p>
 </div>
 <div class="difficult-words article">
     <h2>Difficult Words</h2>
     <!-- max number of difficult words is 10 -->
 <ul>
-<li>
-<p>greet</p>
-</li>
-<li>
-<p>挨拶する</p>
-</li>
-<li>
-<p>useful</p>
-</li>
-<li>
-<p>便利な；有用な</p>
-</li>
-<li>
-<p>wild</p>
-</li>
-<li>
-<p>荒っぽい；野生</p>
-</li>
+<li>flooding</li>
+<li>浸水</li>
+<li>flooded</li>
+<li>溢れた；浸水した</li>
+<li>one quarter</li>
+<li>¼ ；四分の一</li>
+<li>lost water</li>
+<li>断水した</li>
+<li>suffered from</li>
+<li>苦しんだ</li>
+<li>water outage</li>
+<li>断水</li>
+<li>heavy rains</li>
+<li>大雨</li>
+<li>recovering</li>
+<li>復旧してる</li>
+<li>damage</li>
+<li>被害</li>
+<li>~incorrectly</li>
+<li>不正解に～</li>
 </ul>
 </div>
 </div>
 <div class="page">
-<img alt="Ms. Whiskers" class="feature-img-left" src="imgs/feature.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
-<div class="quarter-article article">
+<div class="custom-article article" style="grid-row:span 3;grid-column:span 6;">
 <!-- a quarter article should not be more than 600 char -->
-<h2 id="art-corner">Art Corner</h2>
-<div class="author">By Yoshiko</div>
-<img alt="Ms. Whiskers" class="art-img" src="imgs/feature.jpg"></div>
-<div class="quarter-article article">
-<!-- a quarter article should not be more than 600 char -->
-<h2 id="art-corner-1">Art Corner</h2>
+<h2>Review: Black Thunders (Candy Bars)</h2>
 <div class="author">By Matt</div>
-<img alt="Trump Buys Greenland" class="art-img" src="imgs/feature.jpg"></div>
-<div class="quarter-article article">
-<!-- a quarter article should not be more than 600 char -->
-<h2 id="puzzle">Puzzle</h2>
-<img alt="Sudoku Puzzle" class="puzzle-img" src="imgs/feature.jpg"></div>
-<div class="quarter-article article">
-
-
-    <!-- a quarter article should not be more than 630 char -->
-<h2 id="riddle">Riddle</h2>
-<p>Answer:</p>
-<p><button class="spoiler">INSERT_RIDDLE_ANSWER_HERE</button></p>
-
-
+I'm an expert at candy bars. So today, I’m going to tell you about the best-tasting and worst-tasting black thunder bars.
+<p><strong>THE GOOD:</strong> Here are the five best black thunder bars. (From good to bad)</p>
+<ol>
+<li><strong>Black Thunder: Gold Cafe</strong>			-　Rating: 5/5<br>
+This is a coffee flavor black thunder, with chocolate chunks. I love coffee and I love this black thunder.</li>
+<li><strong>Black Thunder: Dark Matter</strong>			-　Rating: 5/5<br>
+Dark Matter is a bigger black thunder and is full of dark chocolate.  When these were available I would buy them every time I went to the convenience store.</li>
+<li><strong>Black Thunder: Next Gear</strong>			-　Rating: 4.5/5<br>
+Next Gear is full of almonds to give you some protein and energy. It’s similar to the Dark Matter. It’s on sale now at various convenience stores.</li>
+</ol>
+<p><strong>THE BAD:</strong> Here are the five worst tasting Black Thunder bars (from bad to good)</p>
+<ol>
+<li><strong>“Roasted Corn” (とうもろこし) Thunder</strong>	- 　Rating: 0/5<br>
+You shouldn’t put corn in a Black Thunder. It’s gross. Even after you finish eating it, the taste will stay in your mouth. Disgusting.</li>
+<li><strong>“Mochi-Mochi” Black Thunder: Azuki</strong>	- 　Rating: 1/5<br>
+I don’t really like Azuki, but it’s even worse when you mix it with chocolate. Even if you find this Black Thunder, don’t try it.</li>
+<li><strong>Black Thunder: Hojicha Latte</strong>			-　Rating: 1.5/5<br>
+This one is available now, but it’s not worth 30 yen. If you want to have a special black thunder that’s available now, try the Morning Black Thunder (朝専用).</li>
+</ol>
 </div>
 <div class="difficult-words article">
     <h2>Difficult Words</h2>
     <!-- max number of difficult words is 10 -->
-<h2 id="difficult-words">Difficult Words</h2>
 <ul>
-<li>
-<p>greet</p>
-</li>
-<li>
-<p>挨拶する</p>
-</li>
-<li>
-<p>useful</p>
-</li>
-<li>
-<p>便利な；有用な</p>
-</li>
-<li>
-<p>wild</p>
-</li>
-<li>
-<p>荒っぽい；野生</p>
-</li>
-<li>
-<p>phrase</p>
-</li>
-<li>
-<p>フレーズ</p>
-</li>
-<li>
-<p>pretty</p>
-</li>
-<li>
-<p>かなり</p>
-</li>
+<li>expert</li>
+<li>名人</li>
+<li>best-tasting</li>
+<li>一番美味しい</li>
+<li>worst-tasting</li>
+<li>一番不味い</li>
+<li>flavor</li>
+<li>味</li>
+<li>chunks</li>
+<li>チャンク</li>
+<li>available</li>
+<li>販売中</li>
+<li>protein</li>
+<li>タンパク</li>
+<li>various</li>
+<li>様々な</li>
+<li>gross / disgusting</li>
+<li>きもい・気持ち悪い</li>
+<li>worth</li>
+<li>値する</li>
 </ul>
 </div>
 </div>

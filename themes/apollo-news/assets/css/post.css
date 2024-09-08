@@ -32,15 +32,15 @@ h2:lang(ja){
   grid-template-columns: repeat(var(--col-num), 1fr);
   /* grid-template-columns: repeat(var(--col-num), minmax(1fr,calc(100% / (var(--col-num) + 1)))); */
   grid-auto-rows: 10%;
-  grid-template-rows: minmax(0,5%) minmax(0,30%) minmax(0,48%) minmax(0,17%);
-  gap:10px;
+  grid-template-rows: 5% 30% 22% 22% 17%;
+  gap:1%;
   font-size:1.1rem;
 
   /* change the margins as you want them to be. */
 }
 .page:nth-of-type(2) {
   margin-top:5rem;
-  grid-template-rows: minmax(0,25%) minmax(0,30%) minmax(0,30%) minmax(0,17%);
+  grid-template-rows: 26% 27% 27% 17%;
 }
 .translations{
   text-align: right;
@@ -138,6 +138,7 @@ h3{
 .quarter-article{
   /* background-color:rgb(127, 127, 236); */
   grid-column: span calc(var( --col-num ) / 2);
+  grid-row: span 2;
 }
 /* END ARTICLE SECTION */
 

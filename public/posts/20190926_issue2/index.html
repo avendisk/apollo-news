@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Issue #2 UN Climate Action Summit | Apollo News</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.780f33104fa610843c12a027fbe9497e92534d46b1ebd4c778b51330fb8c8bc2.css" integrity="sha256-eA8zEE&#43;mEIQ8EqAn&#43;&#43;lJfpJTTUax69THeLUTMPuMi8I=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -35,7 +35,7 @@
   <main>
     
 
-<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+<link rel="stylesheet" href="/css/post.min.css">
 
 <h1>Issue #2 UN Climate Action Summit</h1>
 
@@ -88,6 +88,11 @@ Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. 
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
     if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
@@ -116,12 +121,12 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contNode = document.createTextNode(mainArticleContinued);
-    document.getElementById("main-article-cont").appendChild(contNode);
-    var continueNode = document.createElement("EM");
+    var contTextNode = document.createTextNode(mainArticleContinued);
+    continueNode.appendChild(contTextNode);
+    var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
-    continueNode.appendChild(contText);
-    mainArticle.append(continueNode);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
 
 
 });
@@ -142,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function() {
 <strong>Peter:</strong> I’m good.</p>
 
 </div>
-<div class="quarter-article article">
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
 <!-- a quarter article should not be more than 630 char -->
 <h2 id="puzzle">Puzzle</h2>
 <img alt="KenKen Puzzle" class="puzzle-img" src="/posts/20190926_issue2/imgs/kenken.png"></div>
@@ -174,9 +179,12 @@ window.addEventListener('DOMContentLoaded', function() {
 </div>
 <!-- END OF THE FIRST PAGE -->
 </div>
+<!-- -------------------------------------------------------- -->
+<!-- ---------------- BEGINNING OF PAGE 2-------------------- -->
+<!-- -------------------------------------------------------- -->
 <div class="page">
-<img alt="Ms. Whiskers" class="feature-img-left" src="/posts/20190926_issue2/imgs/feature.png"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
-<div class="quarter-article article">
+<img alt="Greta Again" class="feature-img-left" src="/posts/20190926_issue2/imgs/feature.png"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="art-corner">Art Corner</h2>
 <div class="author">By Matt</div>
@@ -222,38 +230,34 @@ I like this anime because it's not as slow as other sports anime and I can learn
 
 <div class="ramen-img-container">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+    <img class="ramen-img" src="/imgs/empty-ramen.png">
 
 </div>
 
   
 </div>
 
-<div class="quarter-article article">
-
-
-    <!-- a quarter article should not be more than 630 char -->
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 630 char -->
 <h2 id="riddle-2">Riddle #2</h2>
 <p>How many months have 28 days?
 <br>
 <br>
 <br></p>
 <p>Answer: <button class="spoiler">All of them</button></p>
-
-
 </div>
 <div class="difficult-words article">
     <h2>Difficult Words</h2>

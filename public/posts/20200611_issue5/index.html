@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Issue #5: Pandemic | Apollo News</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Apollo News</h1>
+
+  <nav>
+    <ul>
+    <li class="top-menu-option">
+      <a href="/">Home</a>
+    </li>
+    <li class="top-menu-option">
+      <a href="/posts">News</a>
+    </li>
+    <li class="top-menu-option">
+      <a href="/tags">Tags</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+
+<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+
+<h1>Issue #5: Pandemic</h1>
+
+
+
+  <time datetime="2024-09-04T01:00:31-04:00">September 4, 2024</time>
+
+<div class="translations">
+
+
+
+  
+  <a class=' selected ' href='/posts/20200611_issue5/'> English </a>
+  
+
+
+    
+</div>
+
+<div id="content">
+  <!-- you can put percent signs on this instead of <> to process markdown -->
+<p><div class="page">
+
+<div id="paper-heading">
+    <h1 id="paper-title">Apollo News</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            
+                Issue #1
+            
+        </div>
+        <div id="paper-date">
+            
+                September 4, 2024
+            
+        </div>
+    </div>
+</div></p>
+<!-- The main english article should not be more than 740 characters -->
+<!-- The main japanese article should not be more than 350 characters -->
+<div id="main-article" class="article">
+<h2> Pandemic </h2>
+<div class="author">By Matt</div>
+In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is often called COVID-19 or the coronavirus. By February, the virus spread all around the world. Many countries were not prepared for a pandemic and because of that many people caught the virus. Over 7 million people have caught the virus and over 4 hundred thousand people have died.   To stop the spread of COVID-19 many countries have taken precautions. For example, stopping traveling, working from home, canceling big events and social distancing. In some places things are going back to normal. In Japan, school is having class, restaurants are open and people are going back to work. It’s important to remember a few things to prevent another outbreak.
+
+<ul>
+    <li>Try to wash your hands often</li>
+    <li>Wear a mask</li>
+    <li>Don’t touch your eyes nose or mouth </li>
+    <li>Cover your nose and mouth when you cough and sneeze</li>
+    <li>Stay home if you feel sick</li>
+    <li>If you have a fever and a cough, see a doctor. (But call first!)</li>
+</ul>
+</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
+    if ( document.documentElement.lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,200}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
+    }
+   
+    
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
+    var contTextNode = document.createTextNode(mainArticleContinued);
+    continueNode.appendChild(contTextNode);
+    var italicsNode = document.createElement("EM");
+    var contText = document.createTextNode(continueText);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
+
+
+});
+
+</script>
+<img alt="ALT_TEXT_HERE" class="feature-img" src="imgs/feature.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+    
+<!-- a quarter article should not be more than 600 char -->
+<h2>Review: REVIEW_TITLE</h2>
+<div class="author">By INSERT_AUTHOR_NAME_HERE</div>
+
+<!-- Change the Ramen rating number to be the number out of five -->
+
+
+
+
+
+<br>
+
+    Rating: 3 out of 5 bowls of ramen
+
+
+
+<div class="ramen-img-container">
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    
+
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+
+</div>
+
+  
+</div>
+
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<h2 id="useful-phrase">Useful Phrase</h2>
+<h3 id="insert-phrase-here">“INSERT PHRASE HERE”</h3>
+<p><strong>Meaning:</strong>
+<strong>When to use:</strong>
+<strong>Who to use with:</strong>
+<strong>How to respond:</strong></p>
+<p><strong>Example conversation:</strong><br>
+<strong>Peter:</strong>
+<strong>Mary:</strong>
+<strong>Peter:</strong></p>
+</div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>
+<p>greet</p>
+</li>
+<li>
+<p>挨拶する</p>
+</li>
+<li>
+<p>useful</p>
+</li>
+<li>
+<p>便利な；有用な</p>
+</li>
+<li>
+<p>wild</p>
+</li>
+<li>
+<p>荒っぽい；野生</p>
+</li>
+</ul>
+</div>
+</div>
+<!-- -------------------------------------------------------- -->
+<!-- ---------------- BEGINNING OF PAGE 2-------------------- -->
+<!-- -------------------------------------------------------- -->
+<div class="page">
+<img alt="Ms. Whiskers" class="feature-img-left" src="imgs/feature.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner">Art Corner</h2>
+<div class="author">By Yoshiko</div>
+<img alt="Ms. Whiskers" class="art-img" src="imgs/feature.jpg"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner-1">Art Corner</h2>
+<div class="author">By Matt</div>
+<img alt="Trump Buys Greenland" class="art-img" src="imgs/feature.jpg"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="puzzle">Puzzle</h2>
+<img alt="Sudoku Puzzle" class="puzzle-img" src="imgs/feature.jpg"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 630 char -->
+<h2 id="riddle">Riddle</h2>
+<p><br><br><br>
+Answer:</p>
+<p><button class="spoiler">INSERT_RIDDLE_ANSWER_HERE</button></p>
+</div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>
+<p>greet</p>
+</li>
+<li>
+<p>挨拶する</p>
+</li>
+<li>
+<p>useful</p>
+</li>
+<li>
+<p>便利な；有用な</p>
+</li>
+<li>
+<p>wild</p>
+</li>
+<li>
+<p>荒っぽい；野生</p>
+</li>
+<li>
+<p>phrase</p>
+</li>
+<li>
+<p>フレーズ</p>
+</li>
+<li>
+<p>pretty</p>
+</li>
+<li>
+<p>かなり</p>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+  
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

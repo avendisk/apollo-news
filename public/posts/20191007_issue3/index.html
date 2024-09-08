@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Issue #3 School Festivals | Apollo News</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.780f33104fa610843c12a027fbe9497e92534d46b1ebd4c778b51330fb8c8bc2.css" integrity="sha256-eA8zEE&#43;mEIQ8EqAn&#43;&#43;lJfpJTTUax69THeLUTMPuMi8I=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -35,7 +35,7 @@
   <main>
     
 
-<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+<link rel="stylesheet" href="/css/post.min.css">
 
 <h1>Issue #3 School Festivals</h1>
 
@@ -88,6 +88,11 @@ Mayday is a one day event with very little preparation. In Japan, a high school 
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
     if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
@@ -105,7 +110,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     else
     {
-        textChunks = text.match(/\S.{1,490}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
     }
    
     
@@ -116,23 +121,23 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contNode = document.createTextNode(mainArticleContinued);
-    document.getElementById("main-article-cont").appendChild(contNode);
-    var continueNode = document.createElement("EM");
+    var contTextNode = document.createTextNode(mainArticleContinued);
+    continueNode.appendChild(contTextNode);
+    var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
-    continueNode.appendChild(contText);
-    mainArticle.append(continueNode);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
 
 
 });
 
 </script>
-<img alt="School Festival Entrance" class="feature-img" src="/posts/20191007_issue3/imgs/feature.jpg"><div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<img alt="School Festival Entrance" class="feature-img" src="/posts/20191007_issue3/imgs/feature.jpg"><div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="art-corner">Art Corner</h2>
 <div class="author">By Yuichi</div>
 <img alt="Lion By Yuichi" class="art-img" src="/posts/20191007_issue3/imgs/yuichiart.png"></div>
-<div class="quarter-article article">
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="puzzle-sudoku">Puzzle: Sudoku</h2>
 <img alt="Sudoku Puzzle" class="puzzle-img" src="/posts/20191007_issue3/imgs/sudoku2.png"></div>
@@ -198,34 +203,32 @@ Of my friends, I was the only one who didn’t like DBZ. I thought the fights we
 
 <div class="ramen-img-container">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="/imgs/ramen-with-steam.png">
     
 
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+    <img class="ramen-img" src="/imgs/empty-ramen.png">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+    <img class="ramen-img" src="/imgs/empty-ramen.png">
 
 </div>
 
   
 </div>
 
-<div class="quarter-article article">
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="art-corner-1">Art Corner</h2>
 <div class="author">By Nate</div>
 <img alt="Matt Crying by Nate" class="art-img" src="/posts/20191007_issue3/imgs/cryingmatt.png"></div>
-<div class="quarter-article article">
-
-
-    <!-- a quarter article should not be more than 630 char -->
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 630 char -->
 <h2 id="riddle-3">Riddle #3</h2>
 <p>What has four legs and a back but no body?
 <br>
@@ -233,7 +236,6 @@ Of my friends, I was the only one who didn’t like DBZ. I thought the fights we
 <br>
 Answer:
 <button class="spoiler">A Chair</button></p>
-
 </div>
 <div class="difficult-words article">
     <h2>Difficult Words</h2>
