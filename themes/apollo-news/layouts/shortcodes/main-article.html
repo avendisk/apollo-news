@@ -36,8 +36,8 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contTextNode = document.createTextNode(mainArticleContinued);
-    continueNode.appendChild(contTextNode);
+    // var contTextNode = document.createTextNode(mainArticleContinued);
+    continueNode.innerHTML = mainArticleContinued;
     var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
     italicsNode.appendChild(contText);

@@ -38,6 +38,15 @@ h2:lang(ja){
 
   /* change the margins as you want them to be. */
 }
+table{
+  font-size:1.1rem;
+  text-align:left;
+  width:100%;
+  margin:0;
+}
+td{
+  width:50%;
+}
 .page:nth-of-type(2) {
   margin-top:5rem;
   grid-template-rows: 26% 27% 27% 17%;
@@ -110,7 +119,7 @@ h3{
 }
 #date-and-issue{
   float: right;
-  font-size:0.8rem;
+  font-size:0.9rem;
   margin-right: 1rem;
   text-align: right;
 }
@@ -213,6 +222,9 @@ h3{
 .difficult-words{
   /* background-color:rgb(146, 231, 147); */
   grid-column:span var(--col-num);
+  font-size:0.8rem;
+}
+.difficult-words:lang(ja) li{
   font-size:0.8rem;
 }
 .difficult-words ul

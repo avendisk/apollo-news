@@ -26,13 +26,13 @@ featured_image_caption = "feature caption"
 ![ALT_TEXT_HERE](imgs/feature.jpg)
 {.feature-img}
 
-{{< quarter-article >}}
+{{< articles/custom-article >}}
 <!-- a quarter article should not be more than 630 char -->
 <h2>リビュー: 進撃の巨人</h2>
 {{< author name="マット" >}}
 進撃の巨人を見て、最初に気がつくことは血とグロテスクな巨人です。巨人は歪で滑稽な印象を受けます。シーズン一の映像品質は高くてテレビというより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラもわかっていないから大丈夫。文句をつけるとすれば、ほかのアニメのように話の進みがとても遅い。最近のエピソードは詰まらなくて他のことをしながら見ました。
 {{< articles/ramen-ratings 3 >}}
-{{< /quarter-article >}}
+{{< /articles/custom-article >}}
 
 {{< quarter-article markdownify >}}
 ## 便利なフレーズ
@@ -96,16 +96,16 @@ featured_image_caption = "feature caption"
 
 
 
-{{% quarter-article %}}
+{{% articles/custom-article %}}
 <!-- a quarter article should not be more than 630 char -->
 ## Art Corner
 {{< author name="Yoshiko" >}}
 
 ![Ms. Whiskers](imgs/mswhiskers.jpg)
 {.art-img}
-{{% /quarter-article %}}
+{{% /articles/custom-article %}}
 
-{{% quarter-article %}}
+{{% articles/custom-article %}}
 ## Art Corner
 {{< author name="Matt" >}}
 
@@ -113,16 +113,16 @@ featured_image_caption = "feature caption"
 {.art-img}
 
 
-{{% /quarter-article %}}
+{{% /articles/custom-article %}}
 
-{{% quarter-article %}}
+{{% articles/custom-article %}}
 <!-- a quarter article should not be more than 630 char -->
 ## Puzzle
 ![Sudoku Puzzle](imgs/sudoku.png)
 {.puzzle-img}
-{{% /quarter-article %}}
+{{% /articles/custom-article %}}
 
-{{< quarter-article markdownify >}}
+{{% articles/custom-article %}}
 <!-- a quarter article should not be more than 630 char -->
 ## Riddle #1
 パンはパンでも食べらないパンとはなんですか？
@@ -132,7 +132,7 @@ featured_image_caption = "feature caption"
 Answer:
 
 <button class="spoiler">フライパン</button>
-{{< /quarter-article >}}
+{{% /articles/custom-article %}}
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->

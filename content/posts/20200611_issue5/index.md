@@ -28,53 +28,72 @@ In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is 
     <li>Don’t touch your eyes nose or mouth </li>
     <li>Cover your nose and mouth when you cough and sneeze</li>
     <li>Stay home if you feel sick</li>
-    <li>If you have a fever and a cough, see a doctor. (But call first!)</li>
+    <li>If you have a fever and a cough, see a doctor.</li>
 </ul>
 {{< /main-article >}}
 
-![ALT_TEXT_HERE](imgs/feature.jpg)
+![SARS-CoV-2 from Wikipedia](imgs/feature.png)
 {.feature-img}
 
-{{< articles/custom-article >}}
+{{< articles/custom-article 2 >}}
 <!-- a quarter article should not be more than 600 char -->
-<h2>Review: REVIEW_TITLE</h2>
-{{< author name="INSERT_AUTHOR_NAME_HERE" >}}
-
+<h2>Review: Pandemic (Board Game)</h2>
+{{< author name="Matt" >}}
+Since I already talked about a real-life pandemic I want to talk about one that’s a lot more fun: Pandemic, the board game. This board game has all the players take on a disease. The goal of the game is to work together to eradicate the disease. You have to travel between cities, treat people, build research stations and discover a cure. It is one of the best cooperative board games. I think that in times like these, it’s important to remember that we can only fix the world’s problems if we work together.
 <!-- Change the Ramen rating number to be the number out of five -->
-{{< articles/ramen-ratings 3 >}}
+{{< articles/ramen-ratings 5 >}}
 
 {{< /articles/custom-article >}}
 
 
 
 {{% articles/custom-article %}}
-## Useful Phrase
-### “INSERT PHRASE HERE”
+## Puzzle: Word Scramble
 
-**Meaning:**
-**When to use:** 
-**Who to use with:** 
-**How to respond:** 
+Unscramble the words. (Hint: This week’s difficult words)
+<table>
+<tr>
+<td>ptenerv</td><td><hr></td>
+</tr>
+<tr>
+<td>meandcpi</td><td><hr></td>
+</tr>
+<tr>
+<td>oialsc isitnangcd</td><td><hr></td>
+</tr>
+<tr>
+<td>elfe kcsi</td><td><hr></td>
+</tr>
+<tr>
+<td>ipcooarteev</td><td><hr></td>
+</tr>
+<tr>
+<td>asdsiee</td><td><hr></td>
+</tr>
+</table>
 
 
-**Example conversation:**  
-**Peter:**
-**Mary:** 
-**Peter:** 
 {{% /articles/custom-article %}}
 
 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->
-
-* greet
-* 挨拶する 
-
-* useful
-* 便利な；有用な  
-
-* wild
-* 荒っぽい；野生
+* pandemic
+* パンデミック・世界的蔓延
+* virus
+* ウイルス
+* spread
+* 広がる
+* unscramble
+* 並び替える
+* caught the virus
+* ウイルスに感染した
+* taken precautions
+* 予防線を張った
+* social distancing
+* ソーシャルディスタンス
+* were not prepared
+* 準備できていない
 
 
 
@@ -96,9 +115,9 @@ In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is 
 {{% articles/custom-article %}}
 <!-- a quarter article should not be more than 600 char -->
 ## Art Corner
-{{< author name="Yoshiko" >}}
+{{< author name="Honoka" >}}
 
-![Ms. Whiskers](imgs/feature.jpg)
+![Shodo by Honoka](imgs/shodohonoka.png)
 {.art-img}
 {{% /articles/custom-article %}}
 
@@ -107,7 +126,7 @@ In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is 
 ## Art Corner
 {{< author name="Matt" >}}
 
-![Trump Buys Greenland](imgs/feature.jpg)
+![Shodo by Matt](imgs/shodomatt.png)
 {.art-img}
 
 {{% /articles/custom-article %}}
@@ -123,11 +142,13 @@ In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is 
 
 {{% articles/custom-article %}}
 <!-- a quarter article should not be more than 630 char -->
-## Riddle #
+## Riddle #5
+
+What invention lets you look through a wall?
 <br><br><br>
 Answer:
+<button class="spoiler">A Window</button>
 
-<button class="spoiler">INSERT_RIDDLE_ANSWER_HERE</button>
 {{% /articles/custom-article %}}
 
 {{% difficult-words %}}

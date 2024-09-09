@@ -2,59 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homepage on Apollo News</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in Homepage on Apollo News</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Sep 2024 16:16:44 -0400</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Sep 2024 01:00:31 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Issue #5: Pandemic</title>
+      <link>//localhost:1313/posts/20200611_issue5/</link>
+      <pubDate>Wed, 04 Sep 2024 01:00:31 -0400</pubDate>
+      <guid>//localhost:1313/posts/20200611_issue5/</guid>
+      <description>Apollo News&#xD;Issue #1&#xD;September 4, 2024&#xD;Pandemic By Matt&#xD;In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is often called COVID-19 or the coronavirus. By February, the virus spread all around the world. Many countries were not prepared for a pandemic and because of that many people caught the virus. Over 7 million people have caught the virus and over 4 hundred thousand people have died.</description>
+    </item>
     <item>
       <title>Issue #4: Flooding In Soma</title>
-      <link>/posts/20191030_issue4/</link>
+      <link>//localhost:1313/posts/20191030_issue4/</link>
       <pubDate>Tue, 03 Sep 2024 16:16:44 -0400</pubDate>
-      <guid>/posts/20191030_issue4/</guid>
+      <guid>//localhost:1313/posts/20191030_issue4/</guid>
       <description>Apollo News&#xD;Issue #1&#xD;September 3, 2024&#xD;Flooding In Soma By Matt&#xD;On October 12th, Typhoon Hagibis (Typhoon 19) hit Japan. Flooding happened all over Soma. Both of the main rivers in Soma, Koizumi and Uta flooded. Around one quarter of the buildings in Soma flooded. Most of Soma lost water for one week. In the Soma area 21,000 people suffered from the water outage. Only two weeks later there were heavy rains.</description>
     </item>
     <item>
       <title>Issue #3 School Festivals</title>
-      <link>/posts/20191007_issue3/</link>
+      <link>//localhost:1313/posts/20191007_issue3/</link>
       <pubDate>Mon, 02 Sep 2024 02:22:59 -0400</pubDate>
-      <guid>/posts/20191007_issue3/</guid>
+      <guid>//localhost:1313/posts/20191007_issue3/</guid>
       <description>Apollo News&#xD;Issue #1&#xD;October 7, 2019&#xD;School Festivals&#xD;By Matt&#xD;School festivals in Japan are a big deal. They only happen once every three years. They are open to the public and have many different things going on. Each homeroom has their own project. For example, in the 1-1 homeroom they might have a haunted house, in 1-2, they might have a cafe, 1-3 might have carnival games, and there might be a concert in the gym.</description>
     </item>
     <item>
       <title>Issue #2 UN Climate Action Summit</title>
-      <link>/posts/20190926_issue2/</link>
+      <link>//localhost:1313/posts/20190926_issue2/</link>
       <pubDate>Sat, 31 Aug 2024 12:17:39 -0400</pubDate>
-      <guid>/posts/20190926_issue2/</guid>
+      <guid>//localhost:1313/posts/20190926_issue2/</guid>
       <description>Apollo News&#xD;Issue #2&#xD;September 26, 2019&#xD;UN Climate Action Summit&#xD;By Matt&#xD;Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. She told world leaders that she was angry, she said, “You have stolen my dreams and my childhood with your empty words.” Ms. Thunberg talked about climate change. She thinks that world leaders are not working to fix the problem.&#xD;Ms. Thunberg is a 16 year old girl from Sweden who is worried about the future.</description>
     </item>
     <item>
       <title>Issue #1 Soma Nomaoi</title>
-      <link>/posts/20190830_issue1/</link>
+      <link>//localhost:1313/posts/20190830_issue1/</link>
       <pubDate>Thu, 22 Aug 2024 19:52:38 -0400</pubDate>
-      <guid>/posts/20190830_issue1/</guid>
+      <guid>//localhost:1313/posts/20190830_issue1/</guid>
       <description>Apollo News&#xD;Issue #1&#xD;August 30, 2019&#xD;Soma Nomaoi By Matt&#xD;Last month was Soma&#39;s biggest festival: Soma Nomaoi. On Saturday the 27th, there were parades in Soma, Odaka, and Kashima. People from Soso area dressed up as soldiers and samurai. They marched and rode horses in the parades. On Sunday, there were horse races and flag catching. Many people from all over Japan come to see the festival, the races are the most popular event.</description>
     </item>
     <item>
       <title>Post 3</title>
-      <link>/posts/post-3/</link>
+      <link>//localhost:1313/posts/post-3/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>/posts/post-3/</guid>
+      <guid>//localhost:1313/posts/post-3/</guid>
       <description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.</description>
     </item>
     <item>
       <title>Post 2</title>
-      <link>/posts/post-2/</link>
+      <link>//localhost:1313/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>/posts/post-2/</guid>
+      <guid>//localhost:1313/posts/post-2/</guid>
       <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&#xA;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
     </item>
     <item>
       <title>Post 1</title>
-      <link>/posts/post-1/</link>
+      <link>//localhost:1313/posts/post-1/</link>
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>/posts/post-1/</guid>
+      <guid>//localhost:1313/posts/post-1/</guid>
       <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
     </item>
   </channel>

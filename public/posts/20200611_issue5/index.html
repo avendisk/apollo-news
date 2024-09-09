@@ -35,7 +35,7 @@
   <main>
     
 
-<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+<link rel="stylesheet" href="//localhost:1313/css/post.min.css">
 
 <h1>Issue #5: Pandemic</h1>
 
@@ -87,7 +87,7 @@ In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is 
     <li>Don’t touch your eyes nose or mouth </li>
     <li>Cover your nose and mouth when you cough and sneeze</li>
     <li>Stay home if you feel sick</li>
-    <li>If you have a fever and a cough, see a doctor. (But call first!)</li>
+    <li>If you have a fever and a cough, see a doctor.</li>
 </ul>
 </div>
 <script>
@@ -127,8 +127,8 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contTextNode = document.createTextNode(mainArticleContinued);
-    continueNode.appendChild(contTextNode);
+    
+    continueNode.innerHTML = mainArticleContinued;
     var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
     italicsNode.appendChild(contText);
@@ -138,7 +138,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-<img alt="ALT_TEXT_HERE" class="feature-img" src="imgs/feature.jpg">
+<img alt="SARS-CoV-2 from Wikipedia" class="feature-img" src="/posts/20200611_issue5/imgs/feature.png">
 
 
 
@@ -146,18 +146,20 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
+     
 
 
 
 
 
 
-<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
     
 <!-- a quarter article should not be more than 600 char -->
-<h2>Review: REVIEW_TITLE</h2>
-<div class="author">By INSERT_AUTHOR_NAME_HERE</div>
-
+<h2>Review: Pandemic (Board Game)</h2>
+<div class="author">By Matt</div>
+Since I already talked about a real-life pandemic I want to talk about one that’s a lot more fun: Pandemic, the board game. This board game has all the players take on a disease. The goal of the game is to work together to eradicate the disease. You have to travel between cities, treat people, build research stations and discover a cure. It is one of the best cooperative board games. I think that in times like these, it’s important to remember that we can only fix the world’s problems if we work together.
 <!-- Change the Ramen rating number to be the number out of five -->
 
 
@@ -166,25 +168,27 @@ window.addEventListener('DOMContentLoaded', function() {
 
 <br>
 
-    Rating: 3 out of 5 bowls of ramen
+    Rating: 5 out of 5 bowls of ramen
 
 
 
 <div class="ramen-img-container">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
     
 
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
 
 </div>
 
@@ -192,39 +196,49 @@ window.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
-<h2 id="useful-phrase">Useful Phrase</h2>
-<h3 id="insert-phrase-here">“INSERT PHRASE HERE”</h3>
-<p><strong>Meaning:</strong>
-<strong>When to use:</strong>
-<strong>Who to use with:</strong>
-<strong>How to respond:</strong></p>
-<p><strong>Example conversation:</strong><br>
-<strong>Peter:</strong>
-<strong>Mary:</strong>
-<strong>Peter:</strong></p>
+<h2 id="puzzle-word-scramble">Puzzle: Word Scramble</h2>
+<p>Unscramble the words. (Hint: This week’s difficult words)</p>
+<table>
+<tr>
+<td>ptenerv</td><td><hr></td>
+</tr>
+<tr>
+<td>meandcpi</td><td><hr></td>
+</tr>
+<tr>
+<td>oialsc isitnangcd</td><td><hr></td>
+</tr>
+<tr>
+<td>elfe kcsi</td><td><hr></td>
+</tr>
+<tr>
+<td>ipcooarteev</td><td><hr></td>
+</tr>
+<tr>
+<td>asdsiee</td><td><hr></td>
+</tr>
+</table>
 </div>
 <div class="difficult-words article">
     <h2>Difficult Words</h2>
     <!-- max number of difficult words is 10 -->
 <ul>
-<li>
-<p>greet</p>
-</li>
-<li>
-<p>挨拶する</p>
-</li>
-<li>
-<p>useful</p>
-</li>
-<li>
-<p>便利な；有用な</p>
-</li>
-<li>
-<p>wild</p>
-</li>
-<li>
-<p>荒っぽい；野生</p>
-</li>
+<li>pandemic</li>
+<li>パンデミック・世界的蔓延</li>
+<li>virus</li>
+<li>ウイルス</li>
+<li>spread</li>
+<li>広がる</li>
+<li>unscramble</li>
+<li>並び替える</li>
+<li>caught the virus</li>
+<li>ウイルスに感染した</li>
+<li>taken precautions</li>
+<li>予防線を張った</li>
+<li>social distancing</li>
+<li>ソーシャルディスタンス</li>
+<li>were not prepared</li>
+<li>準備できていない</li>
 </ul>
 </div>
 </div>
@@ -236,23 +250,24 @@ window.addEventListener('DOMContentLoaded', function() {
 <div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="art-corner">Art Corner</h2>
-<div class="author">By Yoshiko</div>
-<img alt="Ms. Whiskers" class="art-img" src="imgs/feature.jpg"></div>
+<div class="author">By Honoka</div>
+<img alt="Shodo by Honoka" class="art-img" src="/posts/20200611_issue5/imgs/shodohonoka.png"></div>
 <div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="art-corner-1">Art Corner</h2>
 <div class="author">By Matt</div>
-<img alt="Trump Buys Greenland" class="art-img" src="imgs/feature.jpg"></div>
+<img alt="Shodo by Matt" class="art-img" src="/posts/20200611_issue5/imgs/shodomatt.png"></div>
 <div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="puzzle">Puzzle</h2>
 <img alt="Sudoku Puzzle" class="puzzle-img" src="imgs/feature.jpg"></div>
 <div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 630 char -->
-<h2 id="riddle">Riddle</h2>
-<p><br><br><br>
-Answer:</p>
-<p><button class="spoiler">INSERT_RIDDLE_ANSWER_HERE</button></p>
+<h2 id="riddle-5">Riddle #5</h2>
+<p>What invention lets you look through a wall?
+<br><br><br>
+Answer:
+<button class="spoiler">A Window</button></p>
 </div>
 <div class="difficult-words article">
     <h2>Difficult Words</h2>
