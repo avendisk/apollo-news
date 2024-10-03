@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/ja/posts/20190830_issue1/</loc>
-    <lastmod>2024-08-26T09:41:42-04:00</lastmod>
+    <loc>//localhost:1313/ja/posts/20190926_issue2/</loc>
+    <lastmod>2024-08-31T12:17:39-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/posts/20190830_issue1/"
+                href="//localhost:1313/posts/20190926_issue2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/ja/posts/20190830_issue1/"
+                href="//localhost:1313/ja/posts/20190926_issue2/"
                 />
   </url><url>
     <loc>//localhost:1313/ja/posts/</loc>
-    <lastmod>2024-08-26T09:41:42-04:00</lastmod>
+    <lastmod>2024-08-31T12:17:39-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>//localhost:1313/ja/</loc>
-    <lastmod>2024-08-26T09:41:42-04:00</lastmod>
+    <lastmod>2024-08-31T12:17:39-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,6 +39,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="//localhost:1313/ja/"
+                />
+  </url><url>
+    <loc>//localhost:1313/ja/posts/20190830_issue1/</loc>
+    <lastmod>2024-08-26T09:41:42-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/posts/20190830_issue1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/ja/posts/20190830_issue1/"
                 />
   </url><url>
     <loc>//localhost:1313/ja/categories/</loc>
