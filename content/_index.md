@@ -8,7 +8,6 @@ draft = false
 
 | アイテム                                            | 税込み価格                           |
 |-----------------------------------------------------|--------------------------------------|
-| <div class="menu-item">和風ラーメン</div>           | <div class="menu-price">780円</div>  |
 | <div class="menu-item">醤油ラーメン</div>           | <div class="menu-price">780円</div>  |
 | <div class="menu-item">塩ラーメン</div>             | <div class="menu-price">890円</div>  |
 | <div class="menu-item">味噌ラーメン</div>           | <div class="menu-price">890円</div>  |

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Issue #6: Protests | Apollo News</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Apollo News</h1>
+
+  <nav>
+    <ul>
+    <li class="top-menu-option">
+      <a href="/">Home</a>
+    </li>
+    <li class="top-menu-option">
+      <a href="/posts">News</a>
+    </li>
+    <li class="top-menu-option">
+      <a href="/tags">Tags</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+
+<link rel="stylesheet" href="//localhost:1313/css/post.min.css">
+
+<h1>Issue #6: Protests</h1>
+
+
+
+  <time datetime="2024-09-15T01:31:03-04:00">September 15, 2024</time>
+
+<div class="translations">
+
+
+
+  
+  <a class=' selected ' href='/posts/20200622_issue6/'> English </a>
+  
+
+
+    
+</div>
+
+<div id="content">
+  <!-- you can put percent signs on this instead of <> to process markdown -->
+<p><div class="page">
+
+<div id="paper-heading">
+    <h1 id="paper-title">Apollo News</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            
+                Issue #1
+            
+        </div>
+        <div id="paper-date">
+            
+                September 15, 2024
+            
+        </div>
+    </div>
+</div></p>
+<!-- The main english article should not be more than 740 characters -->
+<!-- The main japanese article should not be more than 350 characters -->
+<div id="main-article" class="article">
+<h2> Protest </h2>
+<div class="author">By Matt</div>
+On May 25th 2020, George Floyd, a 46-year-old black man was killed by the police in Minneapolis, USA. In the USA, police are often violent especially to minorities.  After that people protested in the USA. The protests grew bigger and bigger. Soon people around the world were protesting. In America, some of the protests became violent. Police attacked the protesters and the protesters destroyed buildings.  In the past there have been similar protests. In 2014, Michael Brown,  a black 18-year-old was killed by the police in Ferguson, USA and there were protests all over the US. This time the protests are even bigger. Now, many things are happening in the USA. The coronavirus is spreading. The US has the most cases of coronavirus in the world. Because of this, many people are unemployed and many people saw the video of George Floyd’s death. They have also seen videos of the police attacking protesters. People see these videos and then they join the protests. Now, the protests continue and the police continue to arrest many protestors. Over 9,000 protesters have been arrested. Do you want to know more? You can read more on the website of the Associated Press.
+</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
+    if ( document.documentElement.lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,200}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
+    }
+   
+    
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
+    
+    continueNode.innerHTML = mainArticleContinued;
+    var italicsNode = document.createElement("EM");
+    var contText = document.createTextNode(continueText);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
+
+
+});
+
+</script>
+<img alt="BLM Protest" class="feature-img" src="/posts/20200622_issue6/imgs/feature.jpg">
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+    
+<!-- a quarter article should not be more than 600 char -->
+<h2>Review: UFO Catcher Games</h2>
+<div class="author">By Matt</div>
+I hate UFO Catcher games. I think they are terrible. I don’t think they should even be called games. It should be called gambling. Or maybe a scam. Many of the games cost 100 yen per play and you need to play at least ten times to win. I don’t want to pay 1000 yen for a stuffed animal that is worth 200 yen. That’s crazy! 
+<!-- Change the Ramen rating number to be the number out of five -->
+
+
+
+
+
+<br>
+
+    Rating: 0 out of 5 bowls of ramen
+
+
+
+<div class="ramen-img-container">
+
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+</div>
+
+  
+</div>
+
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+<h2 id="useful-phrase">Useful Phrase</h2>
+<h3 id="can-i-help-at-all--can-i-help">“Can I help at all?” / “Can I help?”</h3>
+<p><strong>Meaning:</strong>「手伝いますか？」など
+<strong>When to use:</strong> When you want to help someone
+<strong>Who to use with:</strong> Anyone. Someone who is lost or needs help carrying something.
+<strong>How to respond:</strong> People usually say “Yes, please” or “No, thank you.”</p>
+<p><strong>Example conversation:</strong><br>
+<strong>Mary:</strong> Hey, can I help?
+<strong>Peter:</strong> Sure, please carry this bag
+<strong>Mary:</strong>  Ok!</p>
+</div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>black man</li>
+<li>黒人の男</li>
+<li>protesters</li>
+<li>デモ参加者</li>
+<li>violent</li>
+<li>乱暴な・激烈な</li>
+<li>similar</li>
+<li>似たような</li>
+<li>especially</li>
+<li>特に</li>
+<li>carrying</li>
+<li>手に持っている</li>
+<li>minorities</li>
+<li>少数派</li>
+<li>respond</li>
+<li>返事する</li>
+<li>protested</li>
+<li>デモした・抗議した</li>
+<li>face</li>
+<li>面している（向き）</li>
+</ul>
+</div>
+</div>
+<!-- -------------------------------------------------------- -->
+<!-- ---------------- BEGINNING OF PAGE 2-------------------- -->
+<!-- -------------------------------------------------------- -->
+<div class="page">
+<img alt="George Floyd Protests in DC" class="feature-img-left" src="/posts/20200622_issue6/imgs/floyd-protests-dc.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner">Art Corner</h2>
+<div class="author">By Matt</div>
+<img alt="Sock Playing the Piano" class="art-img" src="/posts/20200622_issue6/imgs/sockplayingthepiano.jpg"></div>
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner-1">Art Corner</h2>
+<div class="author">By Hirono</div>
+<img alt="Trump Buys Greenland" class="art-img" src="/posts/20200622_issue6/imgs/hironoart.png"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 630 char -->
+<h2 id="riddle-6">Riddle #6</h2>
+<p>What goes up and down without moving?
+<br><br><br>
+Answer:</p>
+<p><button class="spoiler">stairs</button></p>
+</div>
+<div class="difficult-words article">
+    <h2>Difficult Words</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>happening</li>
+<li>起こっている</li>
+<li>unemployed</li>
+<li>無職</li>
+<li>terrible</li>
+<li>ひどい</li>
+<li>gambling</li>
+<li>博打</li>
+<li>scam</li>
+<li>詐欺</li>
+<li>at least</li>
+<li>少なくても</li>
+<li>stuffed animal</li>
+<li>ぬいぐるみ</li>
+<li>worth</li>
+<li>価値がる</li>
+</ul>
+</div>
+</div>
+
+</div>
+  
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>
