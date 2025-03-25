@@ -15,14 +15,14 @@ featured_image_caption = "Picture of School Festival"
 {{< begin-page >}}
 {{< paper-heading >}}
 <!-- The main english article should not be more than 740 characters -->
-<!-- The main japanese rarticle should not be more than 350 characters -->
+<!-- The main japanese article should not be more than 350 characters -->
 {{< main-article >}}
 
 <h2>School Festivals</h2>
 {{< author name="Matt" >}}
-School festivals in Japan are a big deal. They only happen once every three years. They are open to the public and have many different things going on. Each homeroom has their own project. For example, in the 1-1 homeroom they might have a haunted house, in 1-2, they might have a cafe, 1-3 might have carnival games, and there might be a concert in the gym. If you go to a school festival, you can go to all the classrooms and try all the different things.
-In America, my experience was a little different. One of the events at my high school was Mayday. Mayday is like a mix of sports day and the school festivals in Japan, but it’s private. During Mayday, we would have competitions between grades. We would have eating competitions, hula hoop competitions and play capture the flag. We also tried to raise money for charities. I had my head shaved to raise money for charity when I was 15.
-Mayday is a one day event with very little preparation. In Japan, a high school festival is two days, with a few days of preparation and a day of clean up. They are very different, but I think they’re both enjoyable.
+日本の文化祭は一大イベントです。三年間に一回しか行われません。文化祭は公開されて様々なことが行われます。各教室は自分たちの出し物を考える。例えば、１－１だったらお化け屋敷、１－２はカフェで、１－３は縁日のゲーム、体育館では演奏を開かれます。文化祭に行ったら、
+全部の教室を回ってそれぞれ違ったものを見ることができます。アメリカでの私の経験は違いました。高校でのイベントの一つは「メイデイ」でした。メイデイは体育祭と文化祭を合わせたようなもので、非公開で行われます。メイデイで各学年が競い合います。早食い競争やフラフープ競争、旗取りなどがありました。募金もありました。１５歳の時はチャリティー募金のために髪を剃られました。メイデイの準備はほとんど不要です。日本の文化祭は二日間で準備も数日間、そうして掃除は一日もかかります。メイデイと文化祭には多くの違いがあるけど、どっちも楽しいと思っています。
+
 {{< /main-article >}}
 
 ![School Festival Entrance](imgs/feature.jpg)
@@ -52,9 +52,9 @@ Mayday is a one day event with very little preparation. In Japan, a high school 
 {{% difficult-words %}}
 <!-- max number of difficult words is 10 -->
 * big deal
-* 大したこと
+* 一大
 * once every three years
-* 三年で一回
+* 三年に一回
 * open to the public
 * 公開
 * haunted house

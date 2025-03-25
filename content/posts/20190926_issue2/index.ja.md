@@ -34,12 +34,12 @@ featured_image_caption = "feature caption"
 ## Useful Phrase
 ### 「お先に失礼します。」
 
-**Meaning:** "I'm going home (from work)" lit "Sorry I'm being rude by leaving before you"
-**When to use:** When you leave work, to your co-workers. 
+**Meaning:** "I'm going home (from work)" lit "Sorry I'm being rude by leaving before you"  
+**When to use:** When you leave work, to your co-workers.  
 **Who to use with:** Coworkers  
-**How to respond:**   「おつかれさまです」
+**How to respond:**   「おつかれさまです」  
 **Example conversation:**  
-**けん:**　お先に失礼します。  
+**けん:**　お先に失礼します。    
 **りな:** あ、けんさんおつかれさまです。
 
 

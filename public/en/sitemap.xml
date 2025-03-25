@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/20200622_issue6/</loc>
-    <lastmod>2024-09-15T01:31:03-04:00</lastmod>
+    <loc>//localhost:1313/posts/20210202_issue7/</loc>
+    <lastmod>2024-10-02T22:20:49-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2024-09-15T01:31:03-04:00</lastmod>
+    <lastmod>2024-10-02T22:20:49-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -18,6 +18,9 @@
                 href="//localhost:1313/posts/"
                 />
   </url><url>
+    <loc>//localhost:1313/posts/20200622_issue6/</loc>
+    <lastmod>2024-09-15T01:31:03-04:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/20200611_issue5/</loc>
     <lastmod>2024-09-04T01:00:31-04:00</lastmod>
   </url><url>
@@ -26,6 +29,16 @@
   </url><url>
     <loc>//localhost:1313/posts/20191007_issue3/</loc>
     <lastmod>2024-09-02T02:22:59-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/ja/posts/20191007_issue3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/posts/20191007_issue3/"
+                />
   </url><url>
     <loc>//localhost:1313/posts/20190926_issue2/</loc>
     <lastmod>2024-08-31T12:17:39-04:00</lastmod>

@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>20191007_issue3 | アポロニューズ</title>
+<title>Issue #3 School Festivals | アポロニューズ</title>
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -35,9 +35,9 @@
   <main>
     
 
-<link rel="stylesheet" href="http://localhost:1313/css/post.min.css">
+<link rel="stylesheet" href="//localhost:1313/css/post.min.css">
 
-<h1>20191007_issue3</h1>
+<h1>Issue #3 School Festivals</h1>
 
 
 
@@ -75,22 +75,30 @@
         </div>
         <div id="paper-date">
             
-                2024年9月2日
+                2019年10月7日
             
         </div>
     </div>
-</div>
-<div id="main-article" class="article">
+</div></p>
 <!-- The main english article should not be more than 740 characters -->
 <!-- The main japanese article should not be more than 350 characters -->
-<h2> INSERT_ARTICLE_TITLE_HERE </h2>
-<div class="author">By INSERT_AUTHOR_NAME_HERE</div>
+<div id="main-article" class="article">
+
+<h2>School Festivals</h2>
+<div class="author">By Matt</div>
+日本の文化祭は一大イベントです。三年間に一回しか行われません。文化祭は公開されて様々なことが行われます。各教室は自分たちの出し物を考える。例えば、１－１だったらお化け屋敷、１－２はカフェで、１－３は縁日のゲーム、体育館では演奏を開かれます。文化祭に行ったら、
+全部の教室を回ってそれぞれ違ったものを見ることができます。アメリカでの私の経験は違いました。高校でのイベントの一つは「メイデイ」でした。メイデイは体育祭と文化祭を合わせたようなもので、非公開で行われます。メイデイで各学年が競い合います。早食い競争やフラフープ競争、旗取りなどがありました。募金もありました。１５歳の時はチャリティー募金のために髪を剃られました。メイデイの準備はほとんど不要です。日本の文化祭は二日間で準備も数日間、そうして掃除は一日もかかります。メイデイと文化祭には多くの違いがあるけど、どっちも楽しいと思っています。
 
 </div>
 <script>
 window.addEventListener('DOMContentLoaded', function() {
     var isJapanese = false;
     var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
     if ( document.documentElement.lang === "ja")
     {
         isJapanese = true;
@@ -108,7 +116,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     else
     {
-        textChunks = text.match(/\S.{1,490}(?=\s|$)/g);
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
     }
    
     
@@ -119,25 +127,74 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
     }
-    var contNode = document.createTextNode(mainArticleContinued);
-    document.getElementById("main-article-cont").appendChild(contNode);
-    var continueNode = document.createElement("EM");
+    
+    continueNode.innerHTML = mainArticleContinued;
+    var italicsNode = document.createElement("EM");
     var contText = document.createTextNode(continueText);
-    continueNode.appendChild(contText);
-    mainArticle.append(continueNode);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
 
 
 });
 
-</script></p>
-<img alt="ALT_TEXT_HERE" class="feature-img" src="/posts/20191007_issue3/imgs/feature.jpg"><div class="quarter-article article">
+</script>
+<img src="/posts/20191007_issue3/imgs/feature.jpg" alt="School Festival Entrance" class="feature-img"><div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner">Art Corner</h2>
+<div class="author">By Yuichi</div>
+<img src="/posts/20191007_issue3/imgs/yuichiart.png" alt="Lion By Yuichi" class="art-img"></div>
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="puzzle-sudoku">Puzzle: Sudoku</h2>
+<img src="/posts/20191007_issue3/imgs/sudoku2.png" alt="Sudoku Puzzle" class="puzzle-img"></div>
+<div class="difficult-words article">
+    <h2>難しい単語</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>big deal</li>
+<li>一大</li>
+<li>once every three years</li>
+<li>三年に一回</li>
+<li>open to the public</li>
+<li>公開</li>
+<li>haunted house</li>
+<li>お化け屋敷</li>
+<li>carnival games</li>
+<li>縁日のゲーム</li>
+<li>concert</li>
+<li>演奏会</li>
+</ul>
+</div>
+</div>
+<!-- -------------------------------------------------------- -->
+<!-- ---------------- BEGINNING OF PAGE 2-------------------- -->
+<!-- -------------------------------------------------------- -->
+<div class="page">
+<div id="main-article-cont" style="grid-column:1 / 7;"  class="article"></div>
 
 
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
     
 <!-- a quarter article should not be more than 600 char -->
-<h2>Review: REVIEW_TITLE</h2>
-<div class="author">By INSERT_AUTHOR_NAME_HERE</div>
-
+<h2>Review: Dragonball Z (Anime)</h2>
+<div class="author">By Matt</div>
+Dragonball Z is one of the most famous animes in the world. Everyone knows Dragonball Z. Even my mom knows Dragonball Z.
+When I was in elementary school all of my friends were excited to watch the new episode of DBZ every week. Everyone saw Goku fight Cell and everyone saw Goku fight Frieza. 
+Of my friends, I was the only one who didn’t like DBZ. I thought the fights were much too long. Goku vs Frieza was 20 episodes long! That’s over seven hours! One fight in Dragonball Z is longer than three movies. Dragonball Z has some fun characters and lots of manly yelling (in the English version) but it’s too long and that’s why I’m not a big fan.
 <!-- Change the Ramen rating number to be the number out of five -->
 
 
@@ -152,200 +209,64 @@ window.addEventListener('DOMContentLoaded', function() {
 
 <div class="ramen-img-container">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
     
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/ramen-with-steam.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
     
 
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
 
-    <img class="ramen-img" src="http://localhost:1313/imgs/empty-ramen.png">
-
-</div>
-
-
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
 
 </div>
-<div class="quarter-article article">
 
-
-    <h2 id="useful-phrase">Useful Phrase</h2>
-<h3 id="insert-phrase-here">“INSERT PHRASE HERE”</h3>
-<p><strong>Meaning:</strong>
-<strong>When to use:</strong>
-<strong>Who to use with:</strong>
-<strong>How to respond:</strong></p>
-<p><strong>Example conversation:</strong><br>
-<strong>Peter:</strong>
-<strong>Mary:</strong>
-<strong>Peter:</strong></p>
-
-
+  
 </div>
-<div class="difficult-words article">
-    <h2>難しい単語</h2>
-    <!-- max number of difficult words is 10 -->
-<h2 id="difficult-words">Difficult Words</h2>
-<ul>
-<li>
-<p>greet</p>
-</li>
-<li>
-<p>挨拶する</p>
-</li>
-<li>
-<p>useful</p>
-</li>
-<li>
-<p>便利な；有用な</p>
-</li>
-<li>
-<p>wild</p>
-</li>
-<li>
-<p>荒っぽい；野生</p>
-</li>
-<li>
-<p>phrase</p>
-</li>
-<li>
-<p>フレーズ</p>
-</li>
-<li>
-<p>pretty</p>
-</li>
-<li>
-<p>かなり</p>
-</li>
-<li>
-<p>respond</p>
-</li>
-<li>
-<p>返事する；答える</p>
-</li>
-<li>
-<p>riddle</p>
-</li>
-<li>
-<p>謎々</p>
-</li>
-<li>
-<p>bucks</p>
-</li>
-<li>
-<p>ドル</p>
-</li>
-<li>
-<p>recommend</p>
-</li>
-<li>
-<p>勧める</p>
-</li>
-<li>
-<p>to suck at ~</p>
-</li>
-<li>
-<p>～が下手</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="page">
-<img alt="Ms. Whiskers" class="feature-img-left" src="/posts/20191007_issue3/imgs/feature.jpg"><div id="main-article-cont" style="grid-column:3 / 7;"  class="article"></div>
-<div class="quarter-article article">
-<!-- a quarter article should not be more than 600 char -->
-<h2 id="art-corner">Art Corner</h2>
-<div class="author">By Yoshiko</div>
-<img alt="Ms. Whiskers" class="art-img" src="/posts/20191007_issue3/imgs/feature.jpg"></div>
-<div class="quarter-article article">
+
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 600 char -->
 <h2 id="art-corner-1">Art Corner</h2>
-<div class="author">By Matt</div>
-<img alt="Trump Buys Greenland" class="art-img" src="/posts/20191007_issue3/imgs/feature.jpg"></div>
-<div class="quarter-article article">
+<div class="author">By Nate</div>
+<img src="/posts/20191007_issue3/imgs/cryingmatt.png" alt="Matt Crying by Nate" class="art-img"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
 <!-- a quarter article should not be more than 630 char -->
-<h2 id="puzzle">Puzzle</h2>
-<img alt="Sudoku Puzzle" class="puzzle-img" src="/posts/20191007_issue3/imgs/feature.jpg"></div>
-<div class="quarter-article article">
-
-
-    <!-- a quarter article should not be more than 630 char -->
-<h2 id="riddle">Riddle</h2>
-<p>Answer:</p>
-<p><button class="spoiler">INSERT_RIDDLE_ANSWER_HERE</button></p>
-
-
+<h2 id="riddle-3">Riddle #3</h2>
+<p>What has four legs and a back but no body?
+<br>
+<br>
+<br>
+Answer:
+<button class="spoiler">A Chair</button></p>
 </div>
 <div class="difficult-words article">
     <h2>難しい単語</h2>
     <!-- max number of difficult words is 10 -->
-<h2 id="difficult-words">Difficult Words</h2>
 <ul>
-<li>
-<p>greet</p>
-</li>
-<li>
-<p>挨拶する</p>
-</li>
-<li>
-<p>useful</p>
-</li>
-<li>
-<p>便利な；有用な</p>
-</li>
-<li>
-<p>wild</p>
-</li>
-<li>
-<p>荒っぽい；野生</p>
-</li>
-<li>
-<p>phrase</p>
-</li>
-<li>
-<p>フレーズ</p>
-</li>
-<li>
-<p>pretty</p>
-</li>
-<li>
-<p>かなり</p>
-</li>
-<li>
-<p>respond</p>
-</li>
-<li>
-<p>返事する；答える</p>
-</li>
-<li>
-<p>riddle</p>
-</li>
-<li>
-<p>謎々</p>
-</li>
-<li>
-<p>bucks</p>
-</li>
-<li>
-<p>ドル</p>
-</li>
-<li>
-<p>recommend</p>
-</li>
-<li>
-<p>勧める</p>
-</li>
-<li>
-<p>to suck at ~</p>
-</li>
-<li>
-<p>～が下手</p>
-</li>
+<li>grades</li>
+<li>学年</li>
+<li>raise money</li>
+<li>金を調達する</li>
+<li>charity</li>
+<li>慈善</li>
+<li>shaved</li>
+<li>剃りました</li>
+<li>even my mom</li>
+<li>お母さんでさえも</li>
+<li>Of my friends~</li>
+<li>私の友達のなかで～</li>
+<li>manly</li>
+<li>男らしい</li>
+<li>yelling</li>
+<li>怒鳴ること</li>
+<li>version</li>
+<li>版</li>
+<li>not a big fan</li>
+<li>特にファンじゃない</li>
 </ul>
 </div>
 </div>
@@ -356,7 +277,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   </main>
   <footer>
-    <p>Copyright 2024. All rights reserved.</p>
+    <p>Copyright 2025. All rights reserved.</p>
 
   </footer>
 </body>

@@ -42,6 +42,200 @@
 
     <div class="post-snippet">
       
+        <img class="list-feature" src="//localhost:1313/posts/20191007_issue3/imgs/feature.jpg"/>      
+      
+
+
+
+      <h2><a href="//localhost:1313/ja/posts/20191007_issue3/">Issue #3 School Festivals</a></h2>
+       <p class="list-date">September 2, 2024</p>
+      <!-- you can put percent signs on this instead of <> to process markdown -->
+<p><div class="page">
+
+<div id="paper-heading">
+    <h1 id="paper-title">Apollo News</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            
+                Issue #1
+            
+        </div>
+        <div id="paper-date">
+            
+                2019年10月7日
+            
+        </div>
+    </div>
+</div></p>
+<!-- The main english article should not be more than 740 characters -->
+<!-- The main japanese article should not be more than 350 characters -->
+<div id="main-article" class="article">
+
+<h2>School Festivals</h2>
+<div class="author">By Matt</div>
+日本の文化祭は一大イベントです。三年間に一回しか行われません。文化祭は公開されて様々なことが行われます。各教室は自分たちの出し物を考える。例えば、１－１だったらお化け屋敷、１－２はカフェで、１－３は縁日のゲーム、体育館では演奏を開かれます。文化祭に行ったら、
+全部の教室を回ってそれぞれ違ったものを見ることができます。アメリカでの私の経験は違いました。高校でのイベントの一つは「メイデイ」でした。メイデイは体育祭と文化祭を合わせたようなもので、非公開で行われます。メイデイで各学年が競い合います。早食い競争やフラフープ競争、旗取りなどがありました。募金もありました。１５歳の時はチャリティー募金のために髪を剃られました。メイデイの準備はほとんど不要です。日本の文化祭は二日間で準備も数日間、そうして掃除は一日もかかります。メイデイと文化祭には多くの違いがあるけど、どっちも楽しいと思っています。
+
+</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
+    if ( document.documentElement.lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,200}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
+    }
+   
+    
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
+    
+    continueNode.innerHTML = mainArticleContinued;
+    var italicsNode = document.createElement("EM");
+    var contText = document.createTextNode(continueText);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
+
+
+});
+
+</script>
+<img src="/posts/20191007_issue3/imgs/feature.jpg" alt="School Festival Entrance" class="feature-img"><div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner">Art Corner</h2>
+<div class="author">By Yuichi</div>
+<img src="/posts/20191007_issue3/imgs/yuichiart.png" alt="Lion By Yuichi" class="art-img"></div>
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="puzzle-sudoku">Puzzle: Sudoku</h2>
+<img src="/posts/20191007_issue3/imgs/sudoku2.png" alt="Sudoku Puzzle" class="puzzle-img"></div>
+<div class="difficult-words article">
+    <h2>難しい単語</h2>
+    <!-- max number of difficult words is 10 -->
+<ul>
+<li>big deal</li>
+<li>一大</li>
+<li>once every three years</li>
+<li>三年に一回</li>
+<li>open to the public</li>
+<li>公開</li>
+<li>haunted house</li>
+<li>お化け屋敷</li>
+<li>carnival games</li>
+<li>縁日のゲーム</li>
+<li>concert</li>
+<li>演奏会</li>
+</ul>
+</div>
+</div>
+<!-- -------------------------------------------------------- -->
+<!-- ---------------- BEGINNING OF PAGE 2-------------------- -->
+<!-- -------------------------------------------------------- -->
+<div class="page">
+<div id="main-article-cont" style="grid-column:1 / 7;"  class="article"></div>
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+<div class="custom-article article" style="grid-row:span 2;grid-column:span 3;">
+    
+<!-- a quarter article should not be more than 600 char -->
+<h2>Review: Dragonball Z (Anime)</h2>
+<div class="author">By Matt</div>
+Dragonball Z is one of the most famous animes in the world. Everyone knows Dragonball Z. Even my mom knows Dragonball Z.
+When I was in elementary school all of my friends were excited to watch the new episode of DBZ every week. Everyone saw Goku fight Cell and everyone saw Goku fight Frieza. 
+Of my friends, I was the only one who didn’t like DBZ. I thought the fights were much too long. Goku vs Frieza was 20 episodes long! That’s over seven hours! One fight in Dragonball Z is longer than three movies. Dragonball Z has some fun characters and lots of manly yelling (in the English version) but it’s too long and that’s why I’m not a big fan.
+<!-- Change the Ramen rating number to be the number out of five -->
+
+
+
+
+
+<br>
+
+    評価：５ラーメン中の3ラーメン
+
+
+
+<div class="ramen-img-container">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
+
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+</div>
+
+  
+</div>
+
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 600 char -->
+<h2 id="art-corner-1">Art Corner</h2>
+<div class="author">By Nate</div>
+<img src="/posts/20191007_issue3/imgs/cryingmatt.png" alt="Matt Crying by Nate" class="art-img"></div>
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+<!-- a quarter article should not be more than 630 char -->
+<h2 id="riddle-3">Riddle #3</h2>
+<p>What has four legs and a back but no body?
+<br>
+<br>
+<br>
+Answer:
+<button class="spoiler">A Chair</button></p>
+    </div>
+
+
+  
+
+    <div class="post-snippet">
+      
         <img class="list-feature" src="//localhost:1313/posts/20190926_issue2/imgs/feature.png"/>      
       
 
@@ -49,11 +243,93 @@
 
       <h2><a href="//localhost:1313/ja/posts/20190926_issue2/">Issue #2 UN Climate Action Summit</a></h2>
        <p class="list-date">August 31, 2024</p>
-      Apollo NewsIssue #22019年9月26日UN Climate Action SummitBy Mattトゥーンベリグレタさんは９月２３日に国連の温暖化対策サミットで演説しました。各国の代表に「あなたたちは私の夢と子供時代を空虚な言葉で奪ばいました。」と怒りを表明しました。グレタさんは地球温暖化について言及しました。各国の代表は問題解決のための努力を怠っていると彼女は考えている。グレタさんは未来を危惧する１６歳のスウェーデン人。「大絶滅が始まっているけどあなたがたはお金と永遠の経済成長のおとぎ話についてばかり話している。よくもそんなことを！」と代表に伝えました。グレタさんと多くの若者はこれらの国が気候に悪影響をあたえていることは人権侵害だと考えています。政府の無策に抗議するため世界中の学生は９月２７日にストをします。Useful Phrase 「お先に失礼します。」 Meaning: &ldquo;I&rsquo;m going home (from work)&rdquo; lit &ldquo;Sorry I&rsquo;m being rude by leaving before you&rdquo; When to use: When you leave work, to your co-workers. Who to use with: Coworkers
-How to respond: 「おつかれさまです」 Example conversation:
-けん:　お先に失礼します。
-りな: あ、けんさんおつかれさまです。
-Puzzle 難しい単語UN Climate Action Summit 国連の温暖化対策サミット world leaders 各国の代表 stolen 奪ばいました childhood 子供の時代 empty words 空虚なことば fix 直す climate change 地球温暖化 greet 挨拶する respond 返事する；答える conversation 会話 Art Corner By Mattリビュー：火ノ丸相撲By Matt高校のスポーツアニメが多いです。俺はそのほとんどがすきじゃない。多くのスポーツアニメは似ていてワンパターンです。わかりやすくて日本語の練習になるからまだ見ています。最近、火の丸相撲を見ました。メインキャラの潮火の丸は高校一年生です。彼は小さいながらもプロの力士になることを夢みています。火の丸相撲はほかのスポーツアニメと同じく各キャラが特殊能力を持っています。例えば、小関の能力は押し出し、佑真は張り手です。このアニメの好きなポイントはほかのスポーツアニメより進みが早くて、相撲についても勉強になるところです。評価：５ラーメン中の4ラーメンRiddle #2 だっさい乗り物はなんですか？ Answer: 潜水艦　（せんす　いかん）
+      <!-- you can put percent signs on this instead of <> to process markdown -->
+<p><div class="page">
+
+<div id="paper-heading">
+    <h1 id="paper-title">Apollo News</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            
+                Issue #2
+            
+        </div>
+        <div id="paper-date">
+            
+                2019年9月26日
+            
+        </div>
+    </div>
+</div></p>
+<!-- The main english article should not be more than 740 characters -->
+<!-- The main japanese article should not be more than 350 characters -->
+<div id="main-article" class="article">
+
+<h2>UN Climate Action Summit</h2>
+<div class="author">By Matt</div>
+トゥーンベリグレタさんは９月２３日に国連の温暖化対策サミットで演説しました。各国の代表に「あなたたちは私の夢と子供時代を空虚な言葉で奪ばいました。」と怒りを表明しました。グレタさんは地球温暖化について言及しました。各国の代表は問題解決のための努力を怠っていると彼女は考えている。
+グレタさんは未来を危惧する１６歳のスウェーデン人。「大絶滅が始まっているけどあなたがたはお金と永遠の経済成長のおとぎ話についてばかり話している。よくもそんなことを！」と代表に伝えました。グレタさんと多くの若者はこれらの国が気候に悪影響をあたえていることは人権侵害だと考えています。政府の無策に抗議するため世界中の学生は９月２７日にストをします。
+</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
+    if ( document.documentElement.lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,200}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
+    }
+   
+    
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
+    
+    continueNode.innerHTML = mainArticleContinued;
+    var italicsNode = document.createElement("EM");
+    var contText = document.createTextNode(continueText);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
+
+
+});
+
+</script>
+<img src="/posts/20190926_issue2/imgs/feature.png" alt="Greta Thunberg at UN Climate Summit" class="feature-img"><div class="quarter-article article">
+
+
+    <h2 id="useful-phrase">Useful Phrase</h2>
+<h3 id="お先に失礼します">「お先に失礼します。」</h3>
+<p><strong>Meaning:</strong> &ldquo;I&rsquo;m going home (from work)&rdquo; lit &ldquo;Sorry I&rsquo;m being rude by leaving before you&rdquo;<br>
+<strong>When to use:</strong> When you leave work, to your co-workers.<br>
+<strong>Who to use with:</strong> Coworkers<br>
+<strong>How to respond:</strong>   「おつかれさまです」<br>
+<strong>Example conversation:</strong><br>
+<strong>けん:</strong>　お先に失礼します。 <br>
+<strong>りな:</strong> あ、けんさんおつかれさまです。</p>
     </div>
 
 
@@ -68,34 +344,140 @@ Puzzle 難しい単語UN Climate Action Summit 国連の温暖化対策サミ�
 
       <h2><a href="//localhost:1313/ja/posts/20190830_issue1/">20190830_ja</a></h2>
        <p class="list-date">August 26, 2024</p>
-      Apollo NewsIssue #12019年8月30日相馬野馬追By Matt先月は相馬で行われる最大の祭り相馬野馬追がありました。２７日土曜日、相馬と小高と鹿島で行列が行われました。相双地区の住民が足軽や騎馬武者に仮装し、騎馬武者行列をしました。日曜日に騎馬戦と甲冑競馬がありました。日本中の人が相馬を訪れ相馬野馬追を楽しみました。一番人気のイベントは競馬でした。そのよる、小高では打ち上げ花火も催されました。月曜には小高で野馬懸というイベントがありました。野馬懸とは男性参加者が野馬を追いかけ縄をかけて捕まえるイベントです。男性たちはよく馬に蹴られるので、かなり危険なイベントです。多くの相馬市民は競馬と野馬懸をみたことがありません。機会があれば一度ごらんになてください。リビュー: 進撃の巨人By マット進撃の巨人を見て、最初に気がつくことは血とグロテスクな巨人です。巨人は歪で滑稽な印象を受けます。シーズン一の映像品質は高くてテレビというより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラもわかっていないから大丈夫。文句をつけるとすれば、ほかのアニメのように話の進みがとても遅い。最近のエピソードは詰まらなくて他のことをしながら見ました。評価：５ラーメン中の3ラーメン便利なフレーズ 「なんだべ」 意味:「なんですか」もしくは「なんてこった」
-使うとき: わからないときとか、困ったとき
-誰と使う: 友達や家族
-返し言葉: 特にない
-Example conversation:
-パソコンがこわれた時に画面に向かって
-りな: 「なんだべ」
-難しい単語dress up as ~
-～に仮想する
-march
-行進する
-strange
-変な；歪
-quality
-質
-season
-期；シーズン
-subtitles
-字幕
-have no idea
-全くわからない
-complaint
-文句
-get bored
-退屈する
-share
-共有する
-Art Corner By YoshikoArt Corner By MattPuzzle Riddle #1 パンはパンでも食べらないパンとはなんですか？ Answer:
+      <p><div class="page">
+
+<div id="paper-heading">
+    <h1 id="paper-title">Apollo News</h1>
+    <div id="date-and-issue">
+        <div id="issue-num">
+            
+                Issue #1
+            
+        </div>
+        <div id="paper-date">
+            
+                2019年8月30日
+            
+        </div>
+    </div>
+</div></p>
+<!-- The main article should not be more than 740 characters -->
+<div id="main-article" class="article">
+
+<h2>相馬野馬追</h2>
+<div class="author">By Matt</div>
+
+先月は相馬で行われる最大の祭り相馬野馬追がありました。２７日土曜日、相馬と小高と鹿島で行列が行われました。相双地区の住民が足軽や騎馬武者に仮装し、騎馬武者行列をしました。日曜日に騎馬戦と甲冑競馬がありました。日本中の人が相馬を訪れ相馬野馬追を楽しみました。一番人気のイベントは競馬でした。そのよる、小高では打ち上げ花火も催されました。月曜には小高で野馬懸というイベントがありました。野馬懸とは男性参加者が野馬を追いかけ縄をかけて捕まえるイベントです。男性たちはよく馬に蹴られるので、かなり危険なイベントです。多くの相馬市民は競馬と野馬懸をみたことがありません。機会があれば一度ごらんになてください。
+
+</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var isJapanese = false;
+    var continueText = " continued on the next page...";
+    var continueNode = document.getElementById("main-article-cont");
+    if (continueNode == null)
+    {
+        return;
+    }
+    if ( document.documentElement.lang === "ja")
+    {
+        isJapanese = true;
+        continueText = "続きは次のページ。。。";
+    }
+    
+    var mainArticle = document.getElementById("main-article");
+    var text = mainArticle.innerHTML;
+    text = text.replace(/\n/g,"{NEW_LINE}");
+    var textChunks = "";
+    if(isJapanese)
+    {
+        
+        textChunks = text.match(/\S.{1,200}(?<=\。|$)/g);
+    }
+    else
+    {
+        textChunks = text.match(/\S.{1,600}(?=\s|$)/g);
+    }
+   
+    
+    mainArticle.innerHTML = textChunks[0].replace(/{NEW_LINE}/g,"\n");
+    
+    var mainArticleContinued = ""
+    for (let i = 1; i < textChunks.length; i++)
+    {
+        mainArticleContinued += textChunks[i].replace(/{NEW_LINE}/g,"\n") + " ";
+    }
+    
+    continueNode.innerHTML = mainArticleContinued;
+    var italicsNode = document.createElement("EM");
+    var contText = document.createTextNode(continueText);
+    italicsNode.appendChild(contText);
+    mainArticle.append(italicsNode);
+
+
+});
+
+</script>
+<img src="/posts/20190830_issue1/imgs/feature.jpg" alt="ALT_TEXT_HERE" class="feature-img">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="custom-article article" style="grid-row:span 1;grid-column:span 3;">
+    
+<!-- a quarter article should not be more than 630 char -->
+<h2>リビュー: 進撃の巨人</h2>
+<div class="author">By マット</div>
+進撃の巨人を見て、最初に気がつくことは血とグロテスクな巨人です。巨人は歪で滑稽な印象を受けます。シーズン一の映像品質は高くてテレビというより映画のようです。話はね、話は変わっている。俺は、英語の字幕なしで日本語で見ている。ほとんど話が理解できていないです。アニメのキャラもわかっていないから大丈夫。文句をつけるとすれば、ほかのアニメのように話の進みがとても遅い。最近のエピソードは詰まらなくて他のことをしながら見ました。
+
+
+
+
+
+<br>
+
+    評価：５ラーメン中の3ラーメン
+
+
+
+<div class="ramen-img-container">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
+
+    <img class="ramen-img" src="//localhost:1313/imgs/ramen-with-steam.png">
+    
+
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+    <img class="ramen-img" src="//localhost:1313/imgs/empty-ramen.png">
+
+</div>
+  
+</div>
+
+<div class="quarter-article article">
+
+
+    <h2 id="便利なフレーズ">便利なフレーズ</h2>
+<h3 id="なんだべ">「なんだべ」</h3>
+<p><strong>意味:</strong>「なんですか」もしくは「なんてこった」<br>
+<strong>使うとき:</strong> わからないときとか、困ったとき<br>
+<strong>誰と使う:</strong> 友達や家族<br>
+<strong>返し言葉:</strong> 特にない</p>
     </div>
 
 
@@ -107,7 +489,7 @@ Art Corner By YoshikoArt Corner By MattPuzzle Riddle #1 パンはパンでも�
 
   </main>
   <footer>
-    <p>Copyright 2024. All rights reserved.</p>
+    <p>Copyright 2025. All rights reserved.</p>
 
   </footer>
 </body>
