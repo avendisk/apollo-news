@@ -1,7 +1,7 @@
 +++
 title = "Issue #6: Protests"
 date = 2024-09-15T01:31:03-04:00
-draft = true
+draft = false
 featured_image = "imgs/feature.png"
 featured_image_caption = "feature caption"
 summary = "On May 25th 2020, George Floyd, a 46-year-old black man was killed by the police in Minneapolis, USA. In the USA, police are often violent especially to minorities.  After that people protested in the USA. The protests grew bigger and bigger. "

@@ -1,7 +1,7 @@
 +++
 title = "Issue #7: Yuki Matsuri"
 date = 2024-10-02T22:20:49-04:00
-draft = true
+draft = false
 featured_image = "imgs/feature.jpg"
 featured_image_caption = "feature caption"
 summary = "Unfortunately, this year the snow festival in Sapporo was canceled because of COVID-19. Luckily, I went to the festival twice when I lived in Japan. The festival started in 1950 with six snow sculptures and now has hundreds of snow and ice sculptures."

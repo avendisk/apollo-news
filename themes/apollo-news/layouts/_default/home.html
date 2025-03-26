@@ -1,7 +1,31 @@
 {{ define "main" }}
-  {{ .Content }}
+{{ $liststyle := resources.Get "css/list.css"| resources.Minify }}
+<link rel="stylesheet" href="{{ $liststyle.Permalink }}">
+  <h1>Recent Editions</h1>
+  <div class="list-columns">
+  {{ range where site.RegularPages "Section" "posts" }}
+
+    <div class="post-snippet">
+        {{ with .Resources.GetMatch  "{imgs/feature.*,*.jpg,*.png,*.jpeg}" }}
+        <img class="list-feature" src="{{ .Permalink }}"/>      
+      {{ end }}
+
+    <div class="list-summary">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+       <p class="list-date">{{ .Date.Format "January 2, 2006" }}</p>
+      {{ .Summary }}
+    </div>
+    </div>
+
+
+  {{ end }}
+
+{{ template "_internal/pagination.html" . }}
+{{ .Paginator.PageNumber }}
+</div>
+  <!-- {{ .Content }}
   {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
-  {{ end }}
+  {{ end }} -->
 {{ end }}
