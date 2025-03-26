@@ -21,7 +21,9 @@ title = 'My New Hugo Site'
   url= "/tags"
   weight = 30
 
-
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 # [[languages.en.menu.main]]
 # name = "Home"
