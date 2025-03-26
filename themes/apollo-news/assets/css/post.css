@@ -12,6 +12,20 @@
     /* background-color: lavender; */
   }
 }
+@media print {
+  /* All your print styles go here */
+  #header,header,
+  #footer, footer,
+  #nav,.do-not-print {
+    display: none !important;
+  }
+  .page{
+    margin:0 !important;;
+    border:none !important;
+    padding: 02 !important
+  }
+}
+
 .article:lang(ja):not(h2){
   font-size:1.2rem;
   font-family: sans-serif;

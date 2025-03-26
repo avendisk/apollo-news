@@ -4,6 +4,7 @@ date = 2024-09-04T01:00:31-04:00
 draft = true
 featured_image = "imgs/feature.png"
 featured_image_caption = "feature caption"
+summary = "In December 2019, a virus started spreading in China. The virus, SARS-CoV-2, is often called COVID-19 or the coronavirus. By February, the virus spread all around the world."
 
 [params]
     paper_title = "Apollo News"

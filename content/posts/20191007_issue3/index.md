@@ -4,6 +4,7 @@ date = 2024-09-02T02:22:59-04:00
 draft = false
 featured_image = "imgs/feature.jpg"
 featured_image_caption = "Picture of School Festival"
+summary = "School festivals in Japan are a big deal. They only happen once every three years. They are open to the public and have many different things going on. Each homeroom has their own project."
 
 [params]
     paper_title = "Apollo News"

@@ -4,6 +4,7 @@ date = 2024-09-03T16:16:44-04:00
 draft = false
 featured_image = "imgs/feature.jpg"
 featured_image_caption = "feature caption"
+summary = "On October 12th, Typhoon Hagibis (Typhoon 19) hit Japan. Flooding happened all over Soma. Both of the main rivers in Soma, Koizumi and Uta flooded. Around one quarter of the buildings in Soma flooded."
 
 [params]
     paper_title = "Apollo News"

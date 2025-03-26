@@ -4,6 +4,7 @@ date = 2024-10-02T22:20:49-04:00
 draft = true
 featured_image = "imgs/feature.jpg"
 featured_image_caption = "feature caption"
+summary = "Unfortunately, this year the snow festival in Sapporo was canceled because of COVID-19. Luckily, I went to the festival twice when I lived in Japan. The festival started in 1950 with six snow sculptures and now has hundreds of snow and ice sculptures."
 
 [params]
     paper_title = "Apollo News"
@@ -22,7 +23,8 @@ featured_image_caption = "feature caption"
 {{< main-article >}}
 <h2> Sapporo Yuki Matsuri (Snow Festival) </h2>
 {{< author name="Matt" >}}
-Unfortunately, this year the snow festival in Sapporo was canceled because of COVID-19. Luckily, I went to the festival twice when I lived in Japan. The festival started in 1950 with six snow sculptures and now has hundreds of snow and ice sculptures. Some of the snow sculptures are so big that they are used as stages for performances. Famous people or things are often the theme. One year I went it theme was Osamu Tezuka (creator of Mighty Atom / Astro Boy). Another year it was the 30th anniversary of Dragonball. So much snow is used in the festival that the Self-Defense Force often helps by bringing snow from far away to be used in the sculptures and they make some snow sculptures. Here's a list of some events at the snow festival:
+Unfortunately, this year the snow festival in Sapporo was canceled because of COVID-19. Luckily, I went to the festival twice when I lived in Japan. The festival started in 1950 with six snow sculptures and now has hundreds of snow and ice sculptures.
+Some of the snow sculptures are so big that they are used as stages for performances. Famous people or things are often the theme. One year I went it theme was Osamu Tezuka (creator of Mighty Atom / Astro Boy). Another year it was the 30th anniversary of Dragonball. So much snow is used in the festival that the Self-Defense Force often helps by bringing snow from far away to be used in the sculptures and they make some snow sculptures. Here's a list of some events at the snow festival:
 
 <ul>
     <li>Snow and Ice sculptures</li>

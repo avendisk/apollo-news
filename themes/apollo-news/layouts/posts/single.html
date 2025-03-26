@@ -2,6 +2,7 @@
 {{ $poststyle := resources.Get "css/post.css"| resources.Minify }}
 <link rel="stylesheet" href="{{ $poststyle.Permalink }}">
 
+<div class="do-not-print">
 <h1>{{ .Title }}</h1>
 
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
@@ -23,7 +24,7 @@
     <a href='{{ relref . "/posts/20190830_issue1" }}'>日本語</a>
     |<a href='{{ relref . (dict "path" "/posts/20190830_issue1" "lang" "en") }}'>English</a>  -->
 </div>
-
+</div>
 <div id="content">
   {{ .Content }}
 </div>

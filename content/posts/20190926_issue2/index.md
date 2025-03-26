@@ -4,6 +4,7 @@ date = 2024-08-31T12:17:39-04:00
 draft = false
 featured_image = "imgs/feature.png"
 featured_image_caption = "feature caption"
+summary = 'Greta Thunberg gave a speech at the UN Climate Action Summit on September 23rd. She told world leaders that she was angry, she said, "You have stolen my dreams and my childhood with your empty words."'
 
 [params]
     paper_title = "Apollo News"

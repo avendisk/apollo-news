@@ -30,12 +30,12 @@ title = 'My New Hugo Site'
 
 # [[languages.en.menu.main]]
 # name = "Posts"
-# url = "/"
+# url = "/posts"
 # weight = 20
 
 # [[languages.en.menu.main]]
 # name = "Tags"
-# url = "/"
+# url = "/tags"
 # weight = 30
 
 # [[languages.ja.menu.main]]

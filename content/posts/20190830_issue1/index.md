@@ -4,6 +4,7 @@ date = 2024-08-22T19:52:38-04:00
 draft = false
 featured_image = "imgs/feature.jpg"
 featured_image_caption = "feature caption"
+summary = "Last month was Soma's biggest festival: Soma Nomaoi. On Saturday the 27th, there were parades in Soma, Odaka, and Kashima. People from Soso area dressed up as soldiers and samurai. They marched and rode horses in the parades. "
 
 [params]
     paper_title = "Apollo News"
